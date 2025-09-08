@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="/styles/Home_page/home.css">
+    <link rel="stylesheet" href="/styles/Home_page/nav.css">
+    <link rel="stylesheet" href="/styles/Home_page/header.css">
+    <title>Home</title>
+
+</head>
+
+<body>
+
+    <nav id="sidebar" class="closed">
+        <div id="logo">
+            <img src="/assests/Home/Logo.png" alt="Logo Netflix">
+        </div>
+        <div>
+            <ul id="side_items">
+                <li class="side-item active">
+                    <a href="">
+                        <i class="fa-regular fa-house"></i>
+                        <span class="item-description">
+                            Início
+                        </span>
+                    </a>
+                </li>
+
+                <li class="side-item">
+                    <a href="">
+                        <i class="fa-regular fa-bookmark"></i>
+                        <span class="item-description">
+                            Coleção
+                        </span>
+                    </a>
+                </li>
+
+                <li class="side-item">
+                    <a href="">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="item-description">
+                            Notificações
+                        </span>
+                    </a>
+                </li>
+
+                <li class="side-item">
+                    <a href="">
+                        <i class="fa-solid fa-gear"></i>
+                        <span class="item-description">
+                            Configurações
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        </div>
+        <div id="logout">
+            <button id="logout_btn">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span class="item-description">
+                    Logout
+                </span>
+            </button>
+        </div>
+    </nav>
+
+    <header>
+
+        <div id="search_box">
+            <input type="text" placeholder="Pesquisar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div id="category">
+            <button class="type">Filmes</button>
+            <button class="type">Séries</button>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    Gênero
+                    <i class="fa-solid fa-arrow-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Terror</a>
+                    <a href="#">Sci-fi</a>
+                    <a href="#">Romance</a>
+                    <a href="#">Misterio</a>
+                    <a href="#">Ação</a>
+                    <a href="#">Aventura</a>
+                    <a href="#">Drama</a>
+                    <a href="#">Comédia</a>
+                    <a href="#">Fantasia</a>
+                    <a href="#">Ficção histórica</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="user">
+            <img src="/assests/Home/Kennya.png" alt="User Avatar" id="user_avatar">
+            <span id="nickname">
+                Kennya
+            </span>
+            <i class="fa-solid fa-arrow-down"></i>
+        </div>
+    </header>
+
+    <main></main>
+
+    <footer>
+        <script src="/scripts/home/home.js"></script>
+        <script src="/scripts/home/header.js"></script>
+    </footer>
+
+</body>
+
+</html>
