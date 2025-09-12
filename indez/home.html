@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/styles/Home_page/home.css">
     <link rel="stylesheet" href="/styles/Home_page/nav.css">
     <link rel="stylesheet" href="/styles/Home_page/header.css">
+    <link rel="stylesheet" href="/styles/Home_page/main.css">
     <title>Home</title>
 
 </head>
@@ -72,50 +73,131 @@
         </div>
     </nav>
 
-    <header>
-
-        <div id="search_box">
-            <input type="text" placeholder="Pesquisar">
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
-        <div id="category">
-            <button class="type">Filmes</button>
-            <button class="type">Séries</button>
-            <div class="dropdown">
-                <button class="dropbtn">
-                    Gênero
-                    <i class="fa-solid fa-arrow-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="#">Terror</a>
-                    <a href="#">Sci-fi</a>
-                    <a href="#">Romance</a>
-                    <a href="#">Misterio</a>
-                    <a href="#">Ação</a>
-                    <a href="#">Aventura</a>
-                    <a href="#">Drama</a>
-                    <a href="#">Comédia</a>
-                    <a href="#">Fantasia</a>
-                    <a href="#">Ficção histórica</a>
+    <div id="principal">
+        <header>
+            <div id="search_box">
+                <input type="text" placeholder="Pesquisar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div id="category">
+                <button class="type">Filmes</button>
+                <button class="type">Séries</button>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        Gênero
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Terror</a>
+                        <a href="#">Sci-fi</a>
+                        <a href="#">Romance</a>
+                        <a href="#">Misterio</a>
+                        <a href="#">Ação</a>
+                        <a href="#">Aventura</a>
+                        <a href="#">Drama</a>
+                        <a href="#">Comédia</a>
+                        <a href="#">Fantasia</a>
+                        <a href="#">Ficção histórica</a>
+                    </div>
                 </div>
+
             </div>
 
-        </div>
+            <div id="user">
+                <img src="/assests/Home/Kennya.png" alt="User Avatar" id="user_avatar">
+                <span id="nickname">
+                    Kennya
+                </span>
+                <i class="fa-solid fa-arrow-down"></i>
+            </div>
+        </header>
 
-        <div id="user">
-            <img src="/assests/Home/Kennya.png" alt="User Avatar" id="user_avatar">
-            <span id="nickname">
-                Kennya
-            </span>
-            <i class="fa-solid fa-arrow-down"></i>
-        </div>
-    </header>
+        <main>
+            <div id="carrossel_principal">
+                <div id="slides">
+                    <div class="img-carro-principal">
+                        <img src="/assests/Home/main/carro_principal/HouseDragon.png" alt="House"
+                            class="img-carrossel-principal">
+                    </div>
+                    <div class="img-carro-principal">
+                        <img src="/assests/Home/main/carro_principal/Ruptura.png" alt="House"
+                            class="img-carrossel-principal">
+                    </div>
+                    <div class="img-carro-principal">
+                        <img src="/assests/Home/main/carro_principal/StangerThi.png" alt="House"
+                            class="img-carrossel-principal">
+                    </div>
+                    <div class="img-carro-principal">
+                        <img src="/assests/Home/main/carro_principal/Lacasadepapel.png" alt="La"
+                            class="img-carrossel-principal">
+                    </div>
+                </div>
+            </div>
+            <div id="lancamentos">
+                <div class="infos-secao">
+                    <h3>
+                        Lançamentos
+                    </h3>
+                    <div id="arrow">
+                        <i class="fa-solid fa-chevron-left" id="left"></i>
+                        <i class="fa-solid fa-chevron-right" id="right"></i>
+                    </div>
+                </div>
+                <div class="carrossel-wrapper">
+                    <div id="div_lancamentos">
+                        <div class="img-container">
+                            <img src="/assests/Home/main/lanca/Demon.png" alt="" class="img-lancamentos">
+                        </div>
 
-    <main></main>
+                        <div class="img-container">
+                            <img src="/assests/Home/main/lanca/A hora.png" alt="" class="img-lancamentos">
+                        </div>
 
+                        <div class="img-container">
+                            <img src="/assests/Home/main/lanca/CTSD.png" alt="" class="img-lancamentos">
+                        </div>
+
+                        <div class="img-container">
+                            <img src="/assests/Home/main/lanca/Elio.png" alt="" class="img-lancamentos">
+                        </div>
+
+                        <div class="img-container">
+                            <img src="/assests/Home/main/lanca/pecadores.png" alt="" class="img-lancamentos">
+                        </div>
+
+                        <div class="img-container">
+                            <img src="/assests/Home/main/lanca/Quarteto.png" alt="" class="img-lancamentos">
+                        </div>
+
+                        <div class="img-container">
+                            <img src="/assests/Home/main/lanca/Wandinha.png" alt="" class="img-lancamentos">
+                        </div>
+
+                        <div class="img-container">
+                            <img src="/assests/Home/main/lanca/Ney.png" alt="" class="img-lancamentos">
+                        </div>
+
+                        <div class="img-container">
+                            <img src="/assests/Home/main/lanca/Quartas.png" alt="" class="img-lancamentos">
+                        </div>
+
+                        <div class="img-container">
+                            <img src="/assests/Home/main/lanca/Arcane.png" alt="" class="img-lancamentos">
+                        </div>
+
+                        <div class="img-container">
+                            <img src="/assests/Home/main/lanca/Mashle.png" alt="" class="img-lancamentos">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
     <footer>
         <script src="/scripts/home/home.js"></script>
         <script src="/scripts/home/header.js"></script>
+        <script src="/scripts/home/main.js"></script>
     </footer>
 
 </body>

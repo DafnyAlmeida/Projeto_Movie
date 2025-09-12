@@ -1,0 +1,143 @@
+main {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+ /* CARROSSEL PRINCIPAL */
+
+#carrossel_principal {
+    margin: 10px 40px;
+    display: flex;
+    margin-bottom: 17px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 261px;
+    overflow: hidden;
+}
+
+#slides {
+    display: flex;
+    gap: 20px;
+    transition: transform 1s ease;
+}
+
+.img-carro-principal {
+    width: 754px;
+    height: 261px;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+    flex: 0 0 754px;
+    height: 100%;
+    border-radius: 15px;
+    border: 1px solid white;
+}
+
+.img-carro-principal.active {
+    left: 0;
+    z-index: 2;
+    
+}
+
+.img-carro-principal.prev {
+    left: -100%;
+    z-index: 1;
+    
+}
+
+.img-carro-principal img:hover {
+    transform: scale(1.2);
+}
+
+.img-carrossel-principal {
+    width: 754px;
+    height: 261px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+
+
+/* LANÇAMENTOS */
+
+#lancamentos {
+    width: 100%;
+}
+
+.carrossel-wrapper {
+    overflow: hidden;
+    margin-left: 40px;
+    width: 1250px;
+}
+
+#div_lancamentos {
+    display: flex;
+    gap: 16px;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+    width: 100%;
+
+}
+
+.img-container {
+    width: 144px;
+    height: 217px;
+    flex: 0 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.img-container img:hover {
+    transform: scale(1.2);
+}
+
+.img-lancamentos {
+    width: 144px;
+    height: 217px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.infos-secao {
+    display: flex;
+    margin: 20px 40px;
+}
+
+.infos-secao #right, #left {
+    color: white;
+    cursor: pointer;
+    margin: 0 5px;
+    z-index: 9000;
+}
+
+.infos-secao h3 {
+    color: white;
+    font-size: 18px;
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+#arrow {
+    z-index: 100;
+    margin: 0px 15px;
+}
+
+
