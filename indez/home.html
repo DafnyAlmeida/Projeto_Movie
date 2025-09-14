@@ -25,7 +25,7 @@
         <div>
             <ul id="side_items">
                 <li class="side-item active">
-                    <a href="">
+                    <a href="#">
                         <i class="fa-regular fa-house"></i>
                         <span class="item-description">
                             Início
@@ -34,7 +34,7 @@
                 </li>
 
                 <li class="side-item">
-                    <a href="">
+                    <a href="#">
                         <i class="fa-regular fa-bookmark"></i>
                         <span class="item-description">
                             Coleção
@@ -43,7 +43,7 @@
                 </li>
 
                 <li class="side-item">
-                    <a href="">
+                    <a href="#">
                         <i class="fa-regular fa-bell"></i>
                         <span class="item-description">
                             Notificações
@@ -52,7 +52,7 @@
                 </li>
 
                 <li class="side-item">
-                    <a href="">
+                    <a href="#">
                         <i class="fa-solid fa-gear"></i>
                         <span class="item-description">
                             Configurações
@@ -133,18 +133,23 @@
                     </div>
                 </div>
             </div>
-            <div id="lancamentos">
+
+            <div class="carrossel-secundario">
                 <div class="infos-secao">
                     <h3>
                         Lançamentos
                     </h3>
-                    <div id="arrow">
-                        <i class="fa-solid fa-chevron-left" id="left"></i>
-                        <i class="fa-solid fa-chevron-right" id="right"></i>
+                    <div class="arrow">
+                        <button class="seta left seta-prev" aria-label="Anterior">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                        <button class="seta right seta-next" aria-label="Próximo">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
                     </div>
                 </div>
-                <div class="carrossel-wrapper">
-                    <div id="div_lancamentos">
+                <div class="viewport">
+                    <div class="div-carrossel-secundario" id="carrosselSecundario">
                         <div class="img-container">
                             <img src="/assests/Home/main/lanca/Demon.png" alt="" class="img-lancamentos">
                         </div>
@@ -189,17 +194,81 @@
                             <img src="/assests/Home/main/lanca/Mashle.png" alt="" class="img-lancamentos">
                         </div>
 
+                        <div class="img-container">
+                            <img src="/assests/Home/main/lanca/lilo.png" alt="" class="img-lancamentos">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="carrossel-secundario">
+                <div class="infos-secao">
+                    <h3>
+                        Premiados
+                    </h3>
+                    <div class="arrow">
+                        <button class="seta left seta-prev" aria-label="Anterior">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                        <button class="seta right seta-next" aria-label="Próximo">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="viewport">
+                    <div class="div-carrossel-secundario" id="carrosselTerciario">
+                        <div class="img-container">
+                            <img src="/assests/Home/main/premiados/12anos.png" alt="" class="img-lancamentos">
+                        </div>
+
+                        <div class="img-container">
+                            <img src="/assests/Home/main/premiados/adolescencia.png" alt="" class="img-lancamentos">
+                        </div>
+
+                        <div class="img-container">
+                            <img src="/assests/Home/main/premiados/Breaking.png" alt="" class="img-lancamentos">
+                        </div>
+
+                        <div class="img-container">
+                            <img src="/assests/Home/main/premiados/Chernobyl.png" alt="" class="img-lancamentos">
+                        </div>
+
+                        <div class="img-container">
+                            <img src="/assests/Home/main/premiados/dark.png" alt="" class="img-lancamentos">
+                        </div>
+
+                        <div class="img-container">
+                            <img src="/assests/Home/main/premiados/ForrestGump.png" alt="" class="img-lancamentos">
+                        </div>
+
+                        <div class="img-container">
+                            <img src="/assests/Home/main/premiados/sopranos.png" alt="" class="img-lancamentos">
+                        </div>
+
+                        <div class="img-container">
+                            <img src="/assests/Home/main/premiados/The hand.png" alt="" class="img-lancamentos">
+                        </div>
+
+                        <div class="img-container">
+                            <img src="/assests/Home/main/premiados/titanic.png" alt="" class="img-lancamentos">
+                        </div>
+
+                        <div class="img-container">
+                            <img src="/assests/Home/main/premiados/Tudoemtodo.png" alt="" class="img-lancamentos">
+                        </div>
+
                     </div>
                 </div>
             </div>
         </main>
-    </div>
-    <footer>
-        <script src="/scripts/home/home.js"></script>
-        <script src="/scripts/home/header.js"></script>
-        <script src="/scripts/home/main.js"></script>
-    </footer>
 
+        <footer>
+            <script src="/scripts/home/home.js"></script>
+            <script src="/scripts/home/header.js"></script>
+            <script src="/scripts/home/main.js"></script>
+        </footer>
+    </div>
 </body>
 
 </html>

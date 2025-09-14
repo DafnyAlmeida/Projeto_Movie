@@ -10,6 +10,10 @@
     font-family: "Inter";
 }
 
+body, html {
+    overflow-x: hidden;
+}
+
 body {
     display: flex;
     min-height: 100vh;
@@ -18,4 +22,14 @@ body {
 
 main {
     padding: 20px;
+}
+
+#principal {
+    margin-left: 82px;
+    transition: margin-left 0.6s;
+    overflow-x: hidden;
+}
+
+#principal.shift {
+    margin-left: 231px;
 }

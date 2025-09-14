@@ -47,30 +47,102 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-document.addEventListener("DOMContentLoaded", () => {
-  const container = document.getElementById("div_lancamentos");
-  const wrapper = container.parentElement;
-  const btnLeft = document.getElementById("left");
-  const btnRight = document.getElementById("right");
+document.addEventListener('DOMContentLoaded', () => {
+  const track = document.getElementById('carrosselSecundario');
+  if (!track) return; // se não achar o carrossel, não faz nada
 
-  const posters = Array.from(container.querySelectorAll(".img-container"));
-  const gap = parseInt(getComputedStyle(container).gap) || 0;
-  const posterWidth = posters[0].offsetWidth;
+  const carousel = track.closest('.carrossel-secundario');
+  const viewport = carousel.querySelector('.viewport');
+  const btnPrev = carousel.querySelector('.seta.left');
+  const btnNext = carousel.querySelector('.seta.right');
 
-  const bloco = 4; // posters por clique
-  const passo = bloco * (posterWidth + gap);
-  let deslocamento = 0;
+  let scrolled = 0;
 
-  btnRight.addEventListener("click", () => {
-    deslocamento += passo;
-    const maxScroll = container.scrollWidth - wrapper.offsetWidth;
-    if (deslocamento > maxScroll) deslocamento = 0; // loop infinito
-    container.style.transform = `translateX(-${deslocamento}px)`;
+  function getMaxScroll() {
+    return Math.max(0, track.scrollWidth - viewport.offsetWidth);
+  }
+
+  function clamp(value, min, max) {
+    return Math.max(min, Math.min(max, value));
+  }
+
+  function updateUI() {
+    track.style.transform = `translateX(-${Math.round(scrolled)}px)`;
+    const max = getMaxScroll();
+    btnPrev.disabled = scrolled <= 0;
+    btnNext.disabled = scrolled >= max;
+  }
+
+  function pageStep() {
+    return viewport.offsetWidth; // anda exatamente uma "página"
+  }
+
+  btnNext.addEventListener('click', () => {
+    scrolled = clamp(scrolled + pageStep(), 0, getMaxScroll());
+    updateUI();
   });
 
-  btnLeft.addEventListener("click", () => {
-    deslocamento -= passo;
-    if (deslocamento < 0) deslocamento = container.scrollWidth - wrapper.offsetWidth; // loop infinito
-    container.style.transform = `translateX(-${deslocamento}px)`;
+  btnPrev.addEventListener('click', () => {
+    scrolled = clamp(scrolled - pageStep(), 0, getMaxScroll());
+    updateUI();
   });
+
+  window.addEventListener('load', updateUI);
+  window.addEventListener('resize', () => {
+    scrolled = clamp(scrolled, 0, getMaxScroll());
+    updateUI();
+  });
+
+  updateUI();
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const track = document.getElementById('carrosselTerciario');
+  if (!track) return; // se não achar o carrossel, não faz nada
+
+  const carousel = track.closest('.carrossel-secundario');
+  const viewport = carousel.querySelector('.viewport');
+  const btnPrev = carousel.querySelector('.seta.left');
+  const btnNext = carousel.querySelector('.seta.right');
+
+  let scrolled = 0;
+
+  function getMaxScroll() {
+    return Math.max(0, track.scrollWidth - viewport.offsetWidth);
+  }
+
+  function clamp(value, min, max) {
+    return Math.max(min, Math.min(max, value));
+  }
+
+  function updateUI() {
+    track.style.transform = `translateX(-${Math.round(scrolled)}px)`;
+    const max = getMaxScroll();
+    btnPrev.disabled = scrolled <= 0;
+    btnNext.disabled = scrolled >= max;
+  }
+
+  function pageStep() {
+    return viewport.offsetWidth; // anda exatamente uma "página"
+  }
+
+  btnNext.addEventListener('click', () => {
+    scrolled = clamp(scrolled + pageStep(), 0, getMaxScroll());
+    updateUI();
+  });
+
+  btnPrev.addEventListener('click', () => {
+    scrolled = clamp(scrolled - pageStep(), 0, getMaxScroll());
+    updateUI();
+  });
+
+  window.addEventListener('load', updateUI);
+  window.addEventListener('resize', () => {
+    scrolled = clamp(scrolled, 0, getMaxScroll());
+    updateUI();
+  });
+
+  updateUI();
+});
+

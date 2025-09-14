@@ -4,8 +4,8 @@ header {
     justify-content: space-between;
     height: 70px;
     width: 100vh;
+    overflow: hidden;
     /* border: solid 2px white; */
-
 }
 
 #search_box {
@@ -130,6 +130,7 @@ header {
     position: absolute;
     align-items: center;
     justify-content: space-between;
+    overflow-x: hidden;
     width: 160px;
     height: 42px;
     padding: 5px 15px;
