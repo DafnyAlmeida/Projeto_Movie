@@ -146,3 +146,38 @@ document.addEventListener('DOMContentLoaded', () => {
   updateUI();
 });
 
+
+// document.addEventListener('DOMContentLoaded', () => {
+//   const track = document.getElementById('carrosselSecundario');
+//   const viewport = track.closest('.viewport');
+//   const btnPrev = track.closest('.carrossel-secundario').querySelector('.seta.left');
+//   const btnNext = track.closest('.carrossel-secundario').querySelector('.seta.right');
+
+//   let scrolled = 0;
+
+//   function getMaxScroll() {
+//     return Math.max(0, track.scrollWidth - viewport.offsetWidth);
+//   }
+
+//   function clamp(val, min, max) { return Math.max(min, Math.min(max, val)); }
+
+//   function updateUI() {
+//     track.style.transform = `translateX(-${scrolled}px)`;
+//     const max = getMaxScroll();
+//     btnPrev.disabled = scrolled <= 0;
+//     btnNext.disabled = scrolled >= max;
+//   }
+
+//   function pageStep() {
+//     const max = getMaxScroll();
+//     const step = viewport.offsetWidth;
+//     return scrolled + step > max ? max - scrolled : step;
+//   }
+
+//   btnNext.addEventListener('click', () => { scrolled = clamp(scrolled + pageStep(), 0, getMaxScroll()); updateUI(); });
+//   btnPrev.addEventListener('click', () => { scrolled = clamp(scrolled - viewport.offsetWidth, 0, getMaxScroll()); updateUI(); });
+
+//   window.addEventListener('resize', () => { scrolled = clamp(scrolled, 0, getMaxScroll()); updateUI(); });
+
+//   updateUI();
+// });

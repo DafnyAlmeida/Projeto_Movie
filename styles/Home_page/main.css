@@ -66,8 +66,8 @@ main {
 /* CARROSSEL SECUNDARIO */
 
 .carrossel-secundario {
-  width: 85%;
-  max-width: 1235px;
+  width: 100%;
+  max-width: 1200px;
   margin: 10px 40px;
   color: white;
 }
@@ -151,9 +151,9 @@ main {
   font-size: 18px;
   font-weight: 500;
 }
-
+/* 
 @media (max-width: 540px) {
   .img-container {
     width: 140px;
   }
-}
+} */

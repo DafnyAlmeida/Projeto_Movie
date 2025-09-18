@@ -2,7 +2,6 @@
 <html lang="pt-br">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -13,7 +12,6 @@
     <link rel="stylesheet" href="/styles/Home_page/header.css">
     <link rel="stylesheet" href="/styles/Home_page/main.css">
     <title>Home</title>
-
 </head>
 
 <body>
@@ -104,11 +102,53 @@
             </div>
 
             <div id="user">
-                <img src="/assests/Home/Kennya.png" alt="User Avatar" id="user_avatar">
-                <span id="nickname">
-                    Kennya
-                </span>
-                <i class="fa-solid fa-arrow-down"></i>
+                <div id="user_description">
+                    <div class="avatar-container">
+                        <img src="uploads/default.png" id="user_avatar">
+                        <label for="avatarInput" id="pen">&#9998;</label>
+                    </div>
+                    <input type="file" id="avatarInput" accept="image/*">
+
+                    <div id="description">
+                        <span id="nickname">
+                            Kennya
+                        </span>
+                        <span id="user_infos">
+                            Irmã linda e cirurgiã dentista
+                        </span>
+                    </div>
+                    <i class="fa-solid fa-arrow-down"></i>
+                </div>
+
+                <div id="form">
+                    <form action="" id="form_perfil">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome">
+
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email">
+
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha" name="senha">
+
+                        <label for="bio">Biografia</label>
+                        <textarea name="bio" id="bio" rows="3"></textarea>
+
+                        <label for="cinefilo">Tipo de cinéfilo</label>
+                        <textarea name="cinefilo" id="cinefilo" rows="3"></textarea>
+
+                        <label for="genero">Gênero</label>
+                        <select name="genero" id="genero" name="genero">
+                            <option value="" disabled selected hidden>Selecione</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="feminino">Feminino</option>
+                            <option value="fluido">Gênero-fluido</option>
+                            <option value="nbinario">Não-binário</option>
+                        </select>
+
+                        <button type="submit">Salvar alterações</button>
+                    </form>
+                </div>
             </div>
         </header>
 
