@@ -10,16 +10,20 @@
     <link rel="stylesheet" href="/styles/Movie_page/home_movie.css">
     <link rel="stylesheet" href="/styles/Movie_page/header_movie.css">
     <link rel="stylesheet" href="/styles/Movie_page/inicio_movie.css">
+    <link rel="stylesheet" href="/styles/Movie_page/trailers.css">
     <title>Movie</title>
 </head>
 
 <body>
     <header id="header">
+        <!-- Seta para voltar a tela principal -->
         <div id="return">
             <a href="">
                 <i class="fa-solid fa-arrow-left"></i>
             </a>
         </div>
+
+        <!-- Nav de navegação -->
         <nav id="nav">
             <ul id="ul_header">
                 <li>Início</li>
@@ -33,32 +37,159 @@
                 <li>Semelhantes</li>
             </ul>
         </nav>
+
+        <!-- Logo do Phikine -->
         <div id="logo_header">
             <span>Logo</span>
         </div>
     </header>
+
     <main>
         <section id="inicio">
-            <div id="midia_inicio">
+            <div id="conteiner">
                 <div id="video_inicio">
-                    <video src="/assests/Movie/Inicio/Arcane.mp4" controls></video> 
-                    <img src="/assests/Movie/Inicio/Arcane.png" alt="">
-                </div>
-                <div id="img_inicio">
-                   
-                </div>
-                <button>
-                    <select name="" id="">
-                        <option value=""></option>
-                        <option value=""></option>
-                    </select>
 
-                </button>
+                    <video src="/assests/Movie/Inicio/Arcane.mp4" controls
+                        poster="/assests/Movie/Inicio/Poster.png"></video>
+
+                    <div id="content_video">
+
+                        <img src="/assests/Movie/Inicio/Arcane.png" alt="">
+
+                        <div id="menu_filme" class="menu-filme">
+
+                            <button id="btn_open_opcao" class="btn">
+                                ADICIONAR A LISTA
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                            <div id="opcoes" class="opcoes">
+                                <button class="btn-opcao btn">Adicionar aos assistido</button>
+                                <button class="btn-opcao btn">Quero assistir</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- <div class="conteudo" id="ja_assisti">Você salvou como já assistido!</div>
+                    <div class="conteudo" id="quero_assistir">Você salvou como quero assistir!</div> -->
+
             </div>
+            <div id="infos">
+                <div id="infos_basis">
 
+                    <div id="div_infos1">
+
+                        <h2>ARCANE</h2>
+                        <p id="p_infos">2024 &bull; 2 temporadas &bull; A16</p>
+                        <p id="sinopse">Em meio ao conflito entre as cidades-gêmeas de Piltover e Zaun, duas irmãs lutam
+                            em
+                            lados opostos de uma guerra entre tecnologias mágicas e convicções incompatíveis.</p>
+                    </div>
+
+                    <div id="div_infos2">
+                        <p id="genero"><span>Gênero:</span> Séries de ação e aventura, Séries dos EUA, Séries de
+                            fantasia,
+                            Séries inteligentes, drama, ação, tecnologia</p>
+                        <span>Disponível em:</span>
+                        <img src="/assests/Movie/Inicio/netflix.png" alt="Logo da Netflix">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="trailers">
+            <h2>TRAILERS</h2>
+            <div id="carrossel_trailers">
+                <div id="conteiner_trailers">
+                    <div class="trailer">
+                        <video src="#" controls poster="/assests/Movie/Trailers/trailer1.png"></video>
+                        <span>1min 37s</span>
+                        <div>
+                            <h3>TRESER</h3>
+                            <p>Temporada 2 (Teaser)</p>
+                        </div>
+                    </div>
+                    <div class="trailer">
+                        <video src="#" controls poster="/assests/Movie/Trailers/trailer1.png"></video>
+                        <span>1min 37s</span>
+                        <div>
+                            <h3>TRESER</h3>
+                            <p>Temporada 2 (Teaser)</p>
+                        </div>
+                    </div>
+                    <div class="trailer">
+                        <video src="#" controls poster="/assests/Movie/Trailers/trailer1.png"></video>
+                        <span>1min 37s</span>
+                        <div>
+                            <h3>TRESER</h3>
+                            <p>Temporada 2 (Teaser)</p>
+                        </div>
+                    </div>
+                    <div class="trailer">
+                        <video src="#" controls poster="/assests/Movie/Trailers/trailer1.png"></video>
+                        <span>1min 37s</span>
+                        <div>
+                            <h3>TRESER</h3>
+                            <p>Temporada 2 (Teaser)</p>
+                        </div>
+                    </div>
+                    <div class="trailer">
+                        <video src="#" controls poster="/assests/Movie/Trailers/trailer1.png"></video>
+                        <span>1min 37s</span>
+                        <div>
+                            <h3>TRESER</h3>
+                            <p>Temporada 2 (Teaser)</p>
+                        </div>
+                    </div>
+                    <div class="trailer">
+                        <video src="#" controls poster="/assests/Movie/Trailers/trailer1.png"></video>
+                        <span>1min 37s</span>
+                        <div>
+                            <h3>TRESER</h3>
+                            <p>Temporada 2 (Teaser)</p>
+                        </div>
+                    </div>
+                    <div class="trailer">
+                        <video src="#" controls poster="/assests/Movie/Trailers/trailer1.png"></video>
+                        <span>1min 37s</span>
+                        <div>
+                            <h3>TRESER</h3>
+                            <p>Temporada 2 (Teaser)</p>
+                        </div>
+                    </div>
+                    <div class="trailer">
+                        <video src="#" controls poster="/assests/Movie/Trailers/trailer1.png"></video>
+                        <span>1min 37s</span>
+                        <div>
+                            <h3>TRESER</h3>
+                            <p>Temporada 2 (Teaser)</p>
+                        </div>
+                    </div>
+                    <div class="trailer">
+                        <video src="#" controls poster="/assests/Movie/Trailers/trailer1.png"></video>
+                        <span>1min 37s</span>
+                        <div>
+                            <h3>TRESER</h3>
+                            <p>Temporada 2 (Teaser)</p>
+                        </div>
+                    </div>
+                    <div class="trailer">
+                        <video src="#" controls poster="/assests/Movie/Trailers/trailer1.png"></video>
+                        <span>1min 37s</span>
+                        <div>
+                            <h3>TRESER</h3>
+                            <p>Temporada 2 (Teaser)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <script src="/scripts/movie/inicio.js"></script>
+    </footer>
 
 </body>
 
