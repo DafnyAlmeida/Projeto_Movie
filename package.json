@@ -1,0 +1,24 @@
+{
+  "name": "projeto_movie",
+  "version": "1.0.0",
+  "description": "![Status](https://img.shields.io/badge/Status-Em%20desenvolvimento-blue?style=for-the-badge&label=Status&labelColor=white&color=blue\r )\r ![CSS](https://img.shields.io/badge/CSS-663399.svg?style=for-the-badge&logo=CSS&logoColor=white)\r ![HTML](https://img.shields.io/badge/HTML5-E34F26.svg?style=for-the-badge&logo=HTML5&logoColor=white)\r ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=for-the-badge&logo=JavaScript&logoColor=black)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DafnyAlmeida/Projeto_Movie.git"
+  },
+  "keywords": [],
+  "author": "Dafny Sabino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DafnyAlmeida/Projeto_Movie/issues"
+  },
+  "homepage": "https://github.com/DafnyAlmeida/Projeto_Movie#readme",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "mongoose": "^8.19.0"
+  }
+}

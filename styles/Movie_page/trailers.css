@@ -3,6 +3,12 @@
     color: white;
 }
 
+#trailers h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+
 #carrossel_trailers {
     width: 100vw;
     overflow: hidden;
@@ -11,6 +17,7 @@
 #conteiner_trailers {
     display: flex;
     flex-flow: row nowrap;
+    gap: 20px;
     width: max-content;
 }
 
@@ -23,6 +30,16 @@
 
 .trailer span {
     position: absolute;
+    background-color: #282B30;
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    margin: 0 25px 25px 0;
+}
+
+.video-trailer {
     display: flex;
-    align-items: end;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
