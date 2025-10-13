@@ -5,7 +5,7 @@
 ![HTML](https://img.shields.io/badge/HTML5-E34F26.svg?style=for-the-badge&logo=HTML5&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=for-the-badge&logo=JavaScript&logoColor=black)
 
-## Sobre o Phikine
+## 🎬 Sobre o Phikine
 <p style="text-align: justify;">
  lorem
 </p>
@@ -20,8 +20,15 @@
 * [Licença](#licença)
 * [Contribuidores](#contribuidores)
 
-## Instrução de instalação
+## O que o Phikine pode fazer por você?
 
+<p>Bla bla bla</p>
+
+- `Agendamento direto de casa`: contribui para otimizar o tempo da população, além de evitar aglomerações desnecessárias.
+- `Acompanhamento de perto`: permite que os profissionais da saúde acompanhem de maneira próxima o tratamento de seus pacientes, por meio de dados e registros salvos.
+- `Maiores informações sobre a saúde do paciente`: possibilita que os pacientes tenham fácil acesso a informações como a data da próxima consulta, prescrições médicas, histórico de atendimentos, entre outros.
+
+## Como rodar? 
 <p style="text-align: justify;">
 Crie uma pasta onde deseja salvar o código e seus arquivos complementares. Em seguida, abra o Prompt de Comando nessa pasta e cole o código correspondente ao seu sistema operacional.
 </p>
@@ -37,18 +44,15 @@ URL
 URL
 ```
 
-## Instrução de uso
+## Screenshots
 
 <p style="text-align: justify;">
 Paragrafo mostrando como logar e usar/COLOCAR FOTOS AQUI
 </p>
 
-### Do que o ATENAS é capaz?
-<p>Bla bla bla</p>
+## Futuras Atualizações
 
-- `Agendamento direto de casa`: contribui para otimizar o tempo da população, além de evitar aglomerações desnecessárias.
-- `Acompanhamento de perto`: permite que os profissionais da saúde acompanhem de maneira próxima o tratamento de seus pacientes, por meio de dados e registros salvos.
-- `Maiores informações sobre a saúde do paciente`: possibilita que os pacientes tenham fácil acesso a informações como a data da próxima consulta, prescrições médicas, histórico de atendimentos, entre outros.
+lista
 
 ## Contribuição
 
@@ -63,36 +67,6 @@ Paragrafo explicando sobre os padroes que temos no desenvolvimento do projeto e 
 
 Pra colocar citação:
 > Suponho que isso se deva ao fato de que nenhum de nós tolera que outras pessoas tenham os mesmos defeitos que nós - O Retrato de Dorian Gray
-
-## Autores e seus contatos
-<p style="text-align: justify;">
-Para saber mais a respeito do projeto, conhecer seus criadores ou contatar um deles utilize a tabela abaixo:
-</p>
-<table border="1">
-  <thead>
-   
-  </thead>
-  <tbody>
-    <tr>
-     
-    </tr>
-    <tr>
-     
-    </tr>
-    <tr>
-     
-    </tr>
-    <tr>
-     
-    </tr>
-    <tr>
-      
-    </tr>
-      <tr>
-     
-    </tr>
-  </tbody>
-</table>
 
 ## Licença
 <p style="text-align: justify;">
