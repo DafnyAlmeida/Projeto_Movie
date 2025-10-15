@@ -1,9 +1,13 @@
-# Phikine
-![Status](https://img.shields.io/badge/Status-Em%20desenvolvimento-blue?style=for-the-badge&label=Status&labelColor=white&color=blue
-)
-![CSS](https://img.shields.io/badge/CSS-663399.svg?style=for-the-badge&logo=CSS&logoColor=white)
-![HTML](https://img.shields.io/badge/HTML5-E34F26.svg?style=for-the-badge&logo=HTML5&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=for-the-badge&logo=JavaScript&logoColor=black)
+<p align="center">
+  <h1 align="center">Phikine</h1>
+</p>
+
+<div align="center">
+  <img src="https://img.shields.io/badge/Status-Em%20desenvolvimento-blue?style=for-the-badge&label=Status&labelColor=white&color=blue">
+  <img src="https://img.shields.io/badge/CSS-663399.svg?style=for-the-badge&logo=CSS&logoColor=white">
+  <img src="https://img.shields.io/badge/HTML5-E34F26.svg?style=for-the-badge&logo=HTML5&logoColor=white">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=for-the-badge&logo=JavaScript&logoColor=black">
+</div>
 
 ## 🎬 Sobre o Phikine
 <p style="text-align: justify;">
@@ -13,20 +17,26 @@
 ## índice
 <p style="text-align: justify;">Seções presentes neste README:</p>
 
-* [Instrução de instalação](#instrução-de-instalação)
-* [Instrução de uso](#instrução-de-uso)
-* [Contribuição](#contribuição)
-* [Autores e seus contatos](#autores-e-seus-contatos)
-* [Licença](#licença)
+* [Sobre](#sobre-o-phikine)
+* [Funcionalidades](#o-que-o-phikine-pode-fazer-por-você?)
+* [Como usar?](#instrução-de-uso)
+* [Screenshots](#contribuição)
+* [Futuras Atualizações](#autores-e-seus-contatos)
+* [Contribuição](#licença)
+* [Licença](#licença) 
 * [Contribuidores](#contribuidores)
 
 ## O que o Phikine pode fazer por você?
 
-<p>Bla bla bla</p>
+<p style="text-align: justify;">
+O Phikine busca de atender
+</p>
 
-- `Agendamento direto de casa`: contribui para otimizar o tempo da população, além de evitar aglomerações desnecessárias.
-- `Acompanhamento de perto`: permite que os profissionais da saúde acompanhem de maneira próxima o tratamento de seus pacientes, por meio de dados e registros salvos.
-- `Maiores informações sobre a saúde do paciente`: possibilita que os pacientes tenham fácil acesso a informações como a data da próxima consulta, prescrições médicas, histórico de atendimentos, entre outros.
+- `🔍 Burcar filmes por nome e gênero`
+- `🌠 Marcar como "Assistido" ou "Quero ver"`
+- `🏆 Ver sinopse, elenco, notas, trailers e muito mais de suas produções favoritas`
+- `📱 Interface responsiva e intuitiva`
+- `👓 Visual moderno e inspirado em plataformas de streaming`
 
 ## Como rodar? 
 <p style="text-align: justify;">
@@ -52,32 +62,64 @@ Paragrafo mostrando como logar e usar/COLOCAR FOTOS AQUI
 
 ## Futuras Atualizações
 
-lista
+<p style="text-align: justify;">
+O Phikine busca sempre evoluir para acompanhar você! Veja abaixo o que pretendemos incluir.
+</p>
 
-## Contribuição
+- [ ] Sistema de login com autentificação real;
+- [ ] Recomendações personalizadas;
+- [ ] Modo escuro e claro;
+- [ ] Estatísticas do usuário;
+- [ ] Mecanismos de busca mais eficientes;
+- [ ] Espaço para comentários pessoais;
+- [ ] Informações mais complexas sobre o que você achou do filme. 
+
+## 🤝 Área de Contribuição
 
 <p style="text-align: justify;">
-Paragrafo explicando como as pessoas podem contribuir para o prejeto e se essa contribuição é bem vinda
+Quer ajudar o Phikine a crescer? Toda contribuição e troca de conhecimento é bem-vinda — seja para coorigir um erro, sugerir novas funcionalidades ou melhorar o design.
 </p>
+
+### Como contribuir?
+
+<p style="text-align: justify;">
+Siga os passos abaixo:
+</p>
+
+`1.` *Faça um fork* deste repositório. <br/>
+`2.` *Crie uma nova branch* para sua modificação:
+```
+   git checkout -b minha-melhoria
+```
+
+Implemente suas alterações (corrija, melhore, adicione o que desejar).
+Envie um pull request explicando o que foi alterado e por quê.
+
+💡 Dica: mantenha o estilo e a identidade do Phikine — consulte o guia de design!
+
+### Sugestões de contribuição
+
+- Correção de bugs.
+- Melhoria na performance.
+- Adição de novas funcionalidades (ex: filtros, temas etc).
+- Melhorias na acessibilidade e responsividade.
+- Revisões no design ou na documentação.
+- Antes de abrir uma issue ou pull request, verifique se alguém já levantou o mesmo ponto.
 
 ### GitFlow (Código de Conduta)
 <p style="text-align: justify;">
-Paragrafo explicando sobre os padroes que temos no desenvolvimento do projeto e quais codigos seguimos
+O Phikine é um espaço de colaboração, aprendizado e respeito mútuo — feito por quem ama cinema e entende sua importância. Dessa forma ao contribuir com o Phikine, você concorda em agir de acordo com seus principios.
 </p>
-
-Pra colocar citação:
-> Suponho que isso se deva ao fato de que nenhum de nós tolera que outras pessoas tenham os mesmos defeitos que nós - O Retrato de Dorian Gray
 
 ## Licença
+
 <p style="text-align: justify;">
-Paragrafo sobre o tipo de licença que temos e quais as coisas que estão autorizadas a serem feitas e as que não estão
+O Phikine foi desenvolvido apenas para fins de estudo e de forma experimental, sendo distribuido sob a licença MIT(https://)
 </p>
-EX.: The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
 ## Contribuidores
 <p style="text-align: justify;">
-Todos os contribuidores que ajudaram esse projeto a existir
+Todos os contribuidores que ajudaram esse projeto a existir. Muito obrigada!
 </p>
 
-| [<img loading="lazy" src="https://avatars.githubusercontent.com/u/214126138?v=4" width=115> <br> <sub> Wilson Neto</sub>](https://github.com/wilsindev) |  [<img loading="lazy" src="https://avatars.githubusercontent.com/u/211113377?v=4" width=115> <br> <sub>Dafny Sabino</sub>](https://github.com/DafnySabino) |  [<img loading="lazy" src="https://avatars.githubusercontent.com/u/216435474?v=4" width=115><br><sub>Arthur Nogueira</sub>](https://github.com/thurzinnl) |  [<img loading="lazy" src="https://avatars.githubusercontent.com/u/214126395?v=4" width=115> <br> <sub>Ivens Araújo</sub>](https://github.com/IvensAr7) |   [<img src="https://avatars.githubusercontent.com/u/10136377?v=4" width="115"><br><sub>Renan Moreira</sub>](https://github.com/krlosrenan) |
-| :---: | :---: | :---: | :---: | :---: |
+enan) || :---: | :---: | :---: | :---: | :---: |
