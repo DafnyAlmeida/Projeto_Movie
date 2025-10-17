@@ -46,7 +46,7 @@ Crie uma pasta onde deseja salvar o código e seus arquivos complementares. Em s
 <p>Linux e macOS:</p>
   
 ```
-URL
+
 ```
 <p>Windows:</p>
 
@@ -60,6 +60,8 @@ URL
 Paragrafo mostrando como logar e usar/COLOCAR FOTOS AQUI
 </p>
 
+<img width="1000" height="auto" alt="Phikine" src="https://github.com/user-attachments/assets/eac8679e-b131-490e-b16e-9d597810d9a9" />
+
 ## Futuras Atualizações
 
 <p style="text-align: justify;">
@@ -72,6 +74,7 @@ O Phikine busca sempre evoluir para acompanhar você! Veja abaixo o que pretende
 - [ ] Estatísticas do usuário;
 - [ ] Mecanismos de busca mais eficientes;
 - [ ] Espaço para comentários pessoais;
+- [ ] Mecanismos de compartilhamento;
 - [ ] Informações mais complexas sobre o que você achou do filme. 
 
 ## 🤝 Área de Contribuição
@@ -121,5 +124,3 @@ O Phikine foi desenvolvido apenas para fins de estudo e de forma experimental, s
 <p style="text-align: justify;">
 Todos os contribuidores que ajudaram esse projeto a existir. Muito obrigada!
 </p>
-
-enan) || :---: | :---: | :---: | :---: | :---: |
