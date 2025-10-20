@@ -10,9 +10,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- IMPOTAÇÃO DOS CSS -->
-    <link rel="stylesheet" href="assets/styles/header.css">
-    <link rel="stylesheet" href="assets/styles/main.css">
-    <link rel="stylesheet" href="assets/styles/footer.css">
+    <link rel="stylesheet" href="assets/styles/landing_style.css">
 
     <!-- IMPOTAÇÃO DOS favicon -->
 
@@ -240,10 +238,13 @@
     <!-- FIM DO FOOTER -->
 
     <script>
+
+        // SCRIPT IFRAME
         function avisarProvisorio() {
             alert("Essa página ainda está em desenvolvimento. Em breve estará disponível!");
         }
 
+        // SCRIPT BOTÃO DO IFRAME
         const links = document.querySelectorAll('.link_previa');
         links.forEach(link => {
             link.addEventListener('click', () => {
