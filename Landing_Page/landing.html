@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- IMPOTAÇÃO DOS ICONES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- IMPOTAÇÃO DOS CSS -->
+    <link rel="stylesheet" href="assets/styles/header.css">
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="assets/styles/footer.css">
+
+    <!-- IMPOTAÇÃO DOS favicon -->
+
+    <title>Phikine | Site oficial</title>
+
+</head>
+
+<body>
+    <!-- INICIO DO HEADER -->
+    <header class="header">
+        <div class="div_header">
+            <div class="items">
+                <span class="logo">Phikine</span>
+                <nav class="navbar">
+                    <ul class="list_header">
+                        <li>
+                            <a href="#inicio" class="navbar_link">Início</a>
+                        </li>
+                        <li>
+                            <a href="#previa" class="navbar_link">Prévia</a>
+                        </li>
+                        <li>
+                            <a href="#services" class="navbar_link">Serviços</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="items">
+                <a href="#" class="btn_login btn">
+                    Começar agora
+                    <i class="fa-solid fa-angle-right"></i>
+                </a>
+                <a href="#" class="btn_create btn">
+                    Criar conta
+                </a>
+            </div>
+
+        </div>
+    </header>
+    <!-- FIM DO HEADER -->
+
+    <!-- INÍCIO DO MAIN -->
+    <main>
+        <section id="inicio">
+            <span class="span_inicio">SÓ NO PHIKINE</span>
+            <h1 class="h1">TUDO DE MELHOR NO <br> AUDIOVISUAL EM UM SÓ LUGAR</h1>
+            <a href="#" class="btn btn_inicio">CRIAR UMA CONTA GRATUITA</a>
+
+            <div id="carousel">
+                <div class="carousel_track">
+                    <img src="assets/imagens/Stanger_Things_700x350.jpg" alt="Cena de Stanger Things"
+                        class="item_carousel">
+                    <img src="assets/imagens/A_Lista_de_Schindler.jpg" alt="A Lista de Schindler"
+                        class="item_carousel active">
+                    <img src="assets/imagens/Central_do_Brasil.jpg" alt="Central do Brasil" class="item_carousel">
+                    <img src="assets/imagens/Viva_la_vida.jpg" alt="Viva la vida" class="item_carousel">
+                    <img src="assets/imagens/Cidade_de_Deus.jpg" alt="Cidade de Deus" class="item_carousel">
+                    <img src="assets/imagens/Jojo.jpg" alt="Jojo" class="item_carousel">
+                    <img src="assets/imagens/Pousando_amor.jpeg" alt="Pousando no Amor" class="item_carousel">
+                </div>
+            </div>
+        </section>
+
+        <section id="infos">
+            <div class="div_infos">
+                <div class="items_infos">
+                    <h3 class="h3 h3_infos">
+                        1000 <img src="assets/imagens/plus.svg" alt="Sinal de mais" class="icon_infos">
+                    </h3>
+                    <p>Filmes e séries</p>
+                </div>
+                <div class="items_infos">
+                    <p>Criado a partir da filosofia <br> <span class="span_infos">Mobile First</span></p>
+                </div>
+                <div class="items_infos">
+                    <p>Site <span class="span_infos">planejado</span> e <br> construido para <span
+                            class="span_infos">você</span></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="previa">
+            <div class="items_previa">
+                <h2 class="h2">O PHIKINE</h2>
+                <p class="text_subtitle">Phikine é o espaço para quem ama cinema. <br> Aqui você encontra informações
+                    sobre seus filmes favoritos, marque o que já viu ou quer ver e viva o melhor do mundo do cinema —
+                    simples, prático e divertido.</p>
+            </div>
+            <div class="items_previa">
+                <ul class="list_previa">
+                    <li>
+                        <a href="../indez/home.html" target="tela" class="link_previa">
+                            Veja aqui os filmes
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.cursoemvideo.com/curso/html5-css3-modulo1/" target="tela"
+                            class="link_previa">
+                            Produção
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="tela" onclick="avisarProvisorio(); return false;" class="link_previa">
+                            Sua coleção
+                        </a>
+                    </li>
+                </ul>
+                <div class="items_previa div_iframe">
+                    <iframe id="tela" name="tela" src="https://www.cursoemvideo.com/curso/html5-css3-modulo1/"
+                        frameborder="0" scolling="yes" title="Página">
+                        Seu navegador não é combativel.
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="services">
+            <h2 class="h2">O QUE FAZEMOS POR VOCÊ</h2>
+            <p class="text_subtitle">O Phikine foi criado para quem vive e respira cinema, com experiências que vão além da tela. Confira abaixo tudo o que preparamos para você aproveitar ao máximo esse universo.</p>
+            <div class="container_serv">
+                <div class="items_serv">
+                    <div class="div_icon">
+                        <img src="assets/imagens/search.svg" alt="Lupa" class="icon_serv">
+                    </div>
+                    <h3 class="h3">Buscar filmes por gênero e nome</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, rem. Ullam sunt quia hic, accusamus
+                        aspernatur totam nobis quisquam? </p>
+                </div>
+                <div class="items_serv">
+                    <div class="div_icon">
+                        <img src="assets/imagens/search.svg" alt="Lupa" class="icon_serv">
+                    </div>
+                    <h3 class="h3">Buscar filmes por gênero e nome</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, rem. Ullam sunt quia hic, accusamus
+                        aspernatur totam nobis quisquam? </p>
+                </div>
+                <div class="items_serv">
+                    <div class="div_icon">
+                        <img src="assets/imagens/search.svg" alt="Lupa" class="icon_serv">
+                    </div>
+                    <h3 class="h3">Buscar filmes por gênero e nome</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, rem. Ullam sunt quia hic, accusamus
+                        aspernatur totam nobis quisquam? </p>
+                </div>
+                <div class="items_serv">
+                    <div class="div_icon">
+                        <img src="assets/imagens/search.svg" alt="Lupa" class="icon_serv">
+                    </div>
+                    <h3 class="h3">Buscar filmes por gênero e nome</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, rem. Ullam sunt quia hic, accusamus
+                        aspernatur totam nobis quisquam? </p>
+                </div>
+                <div class="items_serv">
+                    <div class="div_icon">
+                        <img src="assets/imagens/search.svg" alt="Lupa" class="icon_serv">
+                    </div>
+                    <h3 class="h3">Buscar filmes por gênero e nome</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, rem. Ullam sunt quia hic, accusamus aspernatur totam nobis quisquam? </p>
+                </div>
+                <div class="items_serv">
+                    <div class="div_icon">
+                        <img src="assets/imagens/search.svg" alt="Lupa" class="icon_serv">
+                    </div>
+                    <h3 class="h3">Buscar filmes por gênero e nome</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, rem. Ullam sunt quia hic, accusamus aspernatur totam nobis quisquam? </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- FIM DO MAIN -->
+
+    <!-- INÍCIO DO FOOTER -->
+    <footer id="footer">
+        <div class="div_footer">
+            <div class="items_footer">
+                <span class="logo">Logo</span>
+                <h3 class="h3_footer">PHIKINE</h3>
+                <p>Movida pelo sonho de vingança contra as pessoas que a transformaram em uma excluída no Japão do período Edo, uma jovem guerreira decide trilhar um caminho sangrento.</p>
+            </div>
+            <div class="items_footer">
+                <h4 class="h4">NAVEGAÇÃO</h4>
+                <ul>
+                    <li>
+                        <a href="#">Início</a>
+                    </li>
+                    <li>
+                        <a href="#">Prévia</a>
+                    </li>
+                    <li>
+                        <a href="#">Serviços</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="items_footer">
+                <h4 class="h4">PÁGINAS</h4>
+                <ul>
+                    <li>
+                        <a href="#">Início</a>
+                    </li>
+                    <li>
+                        <a href="#">Prévia</a>
+                    </li>
+                    <li>
+                        <a href="#">Serviços</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="items_footer">
+                <h4 class="h4">CONTATO</h4>
+                <ul class="list_contact">
+                    <li>
+                        <i class="fa-brands fa-github"></i>
+                        <a href="#">GitHub</a>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-instagram"></i>
+                        <a href="#">Instagram</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p>© 2025 Phikine. Site desenvolvido para fins experimentais e educacionais.</p>
+    </footer>
+    <!-- FIM DO FOOTER -->
+
+    <script>
+        function avisarProvisorio() {
+            alert("Essa página ainda está em desenvolvimento. Em breve estará disponível!");
+        }
+
+        const links = document.querySelectorAll('.link_previa');
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                links.forEach(l => l.classList.remove('active'));
+                link.classList.add('active');
+            });
+        });
+
+    </script>
+</body>
+
+</html>

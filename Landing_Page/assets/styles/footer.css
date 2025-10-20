@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+:root {
+
+  /**
+   * cores
+   */
+
+  --cor01-bege: #D79F8E;
+  --cor02-rosa: #832C56;
+  --cor03-roxo: #32286C;
+  --cor04-azul: #153765;
+  --cor05-ciano: #0F8295;
+  --branco: #fff;
+  --preto: #000;
+  --branco-transpa: rgba(255, 255, 255, 0.1);
+  --cinza: #999;
+
+  /**
+   * tipografia
+   */
+
+  --ff-inter: 'Inter', sans-serif;
+
+  --fs-1: 3rem;
+  --fs-2: 2rem;
+  --fs-3: 1.5rem;
+  --fs-4: 1.4rem;
+  --fs-5: 1.3rem;
+
+  --fw-900: 900;
+  --fw-700: 700;
+  --fw-600: 600;
+  --fw-500: 500;
+
+  /**
+   * spacing
+   */
+
+  --section-padding: 50px;
+
+  /**
+   * box shadow
+   */
+
+  --shadow-1: 0px 0px 20px var(--black_10);
+  --shadow-2: 0 0 20px 4px var(--black_5);
+
+  /**
+   * border radius
+   */
+
+  --radius-10: 10px;
+  --radius-15: 15px;
+  --radius-20: 20px;
+
+  /**
+   * transition
+   */
+
+  --transition-1: 0.3s ease;
+  --transition-2: 0.5s ease;
+
+}
+
+
+
+/*-----------------------------------*\
+  #FOOTER
+\*-----------------------------------*/
+#footer {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    margin-block: 100px 25px;
+    padding-top: 70px;
+    border-top: 1px solid white;
+    color: var(--branco);
+}
+
+.div_footer {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 75%;
+    gap: 20px;
+}
+
+.items_footer {
+    max-width: 300px;
+    text-align: justify;
+    line-height: 1.5em;
+    min-height: 150px;
+}
+
+.items_footer a {
+    padding-bottom: 3px;
+}
+
+.items_footer a:hover {
+    text-decoration: underline;
+    transform: scale(1.07);
+}
+
+.items_footer > p {
+    font-size: 0.9em;
+    margin-block-start: 15px;
+}
+
+.items_footer > ul {
+    list-style-position: outside;
+}
+
+.list_contact {
+    list-style: none;
+    text-align: start;
+    text-indent: -0.8em;
+}
+
+.list_contact > li > a {
+    display: inline;
+}
+
+.h3_footer {
+    font-size: 2.3em;
+    display: inline-block;
+}
+
+.h4 {
+    font-size: 1.2em;
+    text-indent: -1em;
+    margin-block-end: 0.7em;
+}
