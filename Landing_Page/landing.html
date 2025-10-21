@@ -11,8 +11,10 @@
 
     <!-- IMPOTAÇÃO DOS CSS -->
     <link rel="stylesheet" href="assets/styles/landing_style.css">
+    <link rel="stylesheet" href="assets/styles/media_query.css">
 
-    <!-- IMPOTAÇÃO DOS favicon -->
+    <!-- IMPOTAÇÃO DO FAVICON -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
     <title>Phikine | Site oficial</title>
 
@@ -21,7 +23,11 @@
 <body>
     <!-- INICIO DO HEADER -->
     <header class="header">
-        <div class="div_header">
+        <div class="blur prim"></div>
+        <div class="div_header" id="header">
+            <a href="#" class="btn btn_mobile">
+                Fazer Login
+            </a>
             <div class="items">
                 <span class="logo">Phikine</span>
                 <nav class="navbar">
@@ -49,6 +55,9 @@
                 </a>
             </div>
 
+            <button class="menu" aria-label="toggle manu" onclick="">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </div>
     </header>
     <!-- FIM DO HEADER -->
@@ -73,13 +82,15 @@
                     <img src="assets/imagens/Pousando_amor.jpeg" alt="Pousando no Amor" class="item_carousel">
                 </div>
             </div>
+            <div class="blur seg"></div>
         </section>
 
         <section id="infos">
+            <div class="blur quar"></div>
             <div class="div_infos">
                 <div class="items_infos">
                     <h3 class="h3 h3_infos">
-                        1000 <img src="assets/imagens/plus.svg" alt="Sinal de mais" class="icon_infos">
+                        1000 <img src="assets/imagens/icons/plus.svg" alt="Sinal de mais" class="icon_infos">
                     </h3>
                     <p>Filmes e séries</p>
                 </div>
@@ -87,10 +98,10 @@
                     <p>Criado a partir da filosofia <br> <span class="span_infos">Mobile First</span></p>
                 </div>
                 <div class="items_infos">
-                    <p>Site <span class="span_infos">planejado</span> e <br> construido para <span
-                            class="span_infos">você</span></p>
+                    <p>Site <span class="span_infos">planejado</span> e <br> construido para <span class="span_infos">você</span></p>
                 </div>
             </div>
+            <div class="blur quin"></div>
         </section>
 
         <section id="previa">
@@ -130,50 +141,54 @@
 
         <section id="services">
             <h2 class="h2">O QUE FAZEMOS POR VOCÊ</h2>
-            <p class="text_subtitle">O Phikine foi criado para quem vive e respira cinema, com experiências que vão além da tela. Confira abaixo tudo o que preparamos para você aproveitar ao máximo esse universo.</p>
+            <p class="text_subtitle">O Phikine foi criado para quem vive e respira cinema, com experiências que vão além
+                da tela. Confira abaixo tudo o que preparamos para você aproveitar ao máximo esse universo.</p>
             <div class="container_serv">
                 <div class="items_serv">
                     <div class="div_icon">
-                        <img src="assets/imagens/search.svg" alt="Lupa" class="icon_serv">
+                        <img src="assets/imagens/icons/check.svg" alt="Lupa" class="icon_serv">
                     </div>
-                    <h3 class="h3">Buscar filmes por gênero e nome</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, rem. Ullam sunt quia hic, accusamus
+                    <h3 class="h3">Marcar como "Assistido" ou "Quero ver"</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, rem. Ullam sunt quia hic,
+                        accusamus
                         aspernatur totam nobis quisquam? </p>
                 </div>
                 <div class="items_serv">
                     <div class="div_icon">
-                        <img src="assets/imagens/search.svg" alt="Lupa" class="icon_serv">
+                        <img src="assets/imagens/icons/design.svg" alt="Lupa" class="icon_serv">
                     </div>
-                    <h3 class="h3">Buscar filmes por gênero e nome</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, rem. Ullam sunt quia hic, accusamus
+                    <h3 class="h3">Visual moderno, elegante e criativo</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, rem. Ullam sunt quia hic,
+                        accusamus
                         aspernatur totam nobis quisquam? </p>
                 </div>
                 <div class="items_serv">
                     <div class="div_icon">
-                        <img src="assets/imagens/search.svg" alt="Lupa" class="icon_serv">
+                        <img src="assets/imagens/icons/infos.svg" alt="Lupa" class="icon_serv">
                     </div>
-                    <h3 class="h3">Buscar filmes por gênero e nome</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, rem. Ullam sunt quia hic, accusamus
-                        aspernatur totam nobis quisquam? </p>
+                    <h3 class="h3">Saiba tudo sobre suas produções favoritas</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, rem. Ullam sunt quia hic,
+                        accusamus aspernatur totam nobis quisquam? </p>
                 </div>
                 <div class="items_serv">
                     <div class="div_icon">
-                        <img src="assets/imagens/search.svg" alt="Lupa" class="icon_serv">
+                        <!-- TÁ ERRADO -->
+                        <img src="assets/imagens/icons/comenta.svg" alt="Lupa" class="icon_serv">
                     </div>
-                    <h3 class="h3">Buscar filmes por gênero e nome</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, rem. Ullam sunt quia hic, accusamus
-                        aspernatur totam nobis quisquam? </p>
+                    <h3 class="h3">Espaço para comentários pessoais</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, rem. Ullam sunt quia hic,
+                        accusamus aspernatur totam nobis quisquam? </p>
                 </div>
                 <div class="items_serv">
                     <div class="div_icon">
-                        <img src="assets/imagens/search.svg" alt="Lupa" class="icon_serv">
+                        <img src="assets/imagens/icons/responsi.svg" alt="Lupa" class="icon_serv">
                     </div>
-                    <h3 class="h3">Buscar filmes por gênero e nome</h3>
+                    <h3 class="h3">Interface responsiva e intuitiva</h3>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, rem. Ullam sunt quia hic, accusamus aspernatur totam nobis quisquam? </p>
                 </div>
                 <div class="items_serv">
                     <div class="div_icon">
-                        <img src="assets/imagens/search.svg" alt="Lupa" class="icon_serv">
+                        <img src="assets/imagens/icons/search.svg" alt="Lupa" class="icon_serv">
                     </div>
                     <h3 class="h3">Buscar filmes por gênero e nome</h3>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, rem. Ullam sunt quia hic, accusamus aspernatur totam nobis quisquam? </p>
@@ -187,21 +202,23 @@
     <footer id="footer">
         <div class="div_footer">
             <div class="items_footer">
-                <span class="logo">Logo</span>
-                <h3 class="h3_footer">PHIKINE</h3>
+                <div class="title">
+                    <span class="logo_footer">Phikine</span>
+                    <h3 class="h3_footer">PHIKINE</h3>
+                </div>
                 <p>Movida pelo sonho de vingança contra as pessoas que a transformaram em uma excluída no Japão do período Edo, uma jovem guerreira decide trilhar um caminho sangrento.</p>
             </div>
             <div class="items_footer">
                 <h4 class="h4">NAVEGAÇÃO</h4>
                 <ul>
                     <li>
-                        <a href="#">Início</a>
+                        <a href="#inicio">Início</a>
                     </li>
                     <li>
-                        <a href="#">Prévia</a>
+                        <a href="#previa">Prévia</a>
                     </li>
                     <li>
-                        <a href="#">Serviços</a>
+                        <a href="#services">Serviços</a>
                     </li>
                 </ul>
             </div>
@@ -209,13 +226,13 @@
                 <h4 class="h4">PÁGINAS</h4>
                 <ul>
                     <li>
-                        <a href="#">Início</a>
+                        <a href="landing.html">Início</a>
                     </li>
                     <li>
-                        <a href="#">Prévia</a>
+                        <a href="#">Home</a>
                     </li>
                     <li>
-                        <a href="#">Serviços</a>
+                        <a href="#">Produção</a>
                     </li>
                 </ul>
             </div>
@@ -224,7 +241,7 @@
                 <ul class="list_contact">
                     <li>
                         <i class="fa-brands fa-github"></i>
-                        <a href="#">GitHub</a>
+                        <a href="https://github.com/DafnyAlmeida">GitHub</a>
                     </li>
                     <li>
                         <i class="fa-brands fa-instagram"></i>
@@ -251,6 +268,16 @@
                 links.forEach(l => l.classList.remove('active'));
                 link.classList.add('active');
             });
+        });
+
+        // SCRIPT DO HEADER
+        window.addEventListener("scroll", function () {
+            const header = document.getElementById("header");
+            if (window.scrollY > 50) { // quando rolar 50px ou mais
+                header.classList.add("scrolled");
+            } else {
+                header.classList.remove("scrolled");
+            }
         });
 
     </script>
