@@ -1,0 +1,4 @@
+
+fazer transição de uma página para outra
+deixar responsivo
+

@@ -11,7 +11,7 @@
 
     <!-- IMPOTAÇÃO DOS CSS -->
     <link rel="stylesheet" href="assets/styles/landing_style.css">
-    <link rel="stylesheet" href="assets/styles/media_query.css">
+    <!-- <link rel="stylesheet" href="assets/styles/media_query.css"> -->
 
     <!-- IMPOTAÇÃO DO FAVICON -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -19,15 +19,18 @@
     <title>Phikine | Site oficial</title>
 
 </head>
-
 <body>
     <!-- INICIO DO HEADER -->
     <header class="header">
+
         <div class="blur prim"></div>
+        
         <div class="div_header" id="header">
+
             <a href="#" class="btn btn_mobile">
                 Fazer Login
             </a>
+
             <div class="items">
                 <span class="logo">Phikine</span>
                 <nav class="navbar">
@@ -55,9 +58,7 @@
                 </a>
             </div>
 
-            <button class="menu" aria-label="toggle manu" onclick="">
-                <i class="fa-solid fa-bars"></i>
-            </button>
+            <span class="logo span_mobile">Phikine</span>
         </div>
     </header>
     <!-- FIM DO HEADER -->
@@ -71,15 +72,35 @@
 
             <div id="carousel">
                 <div class="carousel_track">
-                    <img src="assets/imagens/Stanger_Things_700x350.jpg" alt="Cena de Stanger Things"
-                        class="item_carousel">
-                    <img src="assets/imagens/A_Lista_de_Schindler.jpg" alt="A Lista de Schindler"
-                        class="item_carousel active">
-                    <img src="assets/imagens/Central_do_Brasil.jpg" alt="Central do Brasil" class="item_carousel">
-                    <img src="assets/imagens/Viva_la_vida.jpg" alt="Viva la vida" class="item_carousel">
-                    <img src="assets/imagens/Cidade_de_Deus.jpg" alt="Cidade de Deus" class="item_carousel">
-                    <img src="assets/imagens/Jojo.jpg" alt="Jojo" class="item_carousel">
-                    <img src="assets/imagens/Pousando_amor.jpeg" alt="Pousando no Amor" class="item_carousel">
+
+                    <div class="carrossel_item">
+                        <img src="assets/imagens/Stanger_Things_700x350.jpg" alt="Cena de Stanger Things" class="item_carousel">
+                    </div>
+
+                    <div class="carrossel_item">
+                        <img src="assets/imagens/A_Lista_de_Schindler.jpg" alt="A Lista de Schindler" class="item_carousel">
+                    </div>
+
+                    <div class="carrossel_item">
+                        <img src="assets/imagens/Central_do_Brasil.jpg" alt="Central do Brasil" class="item_carousel">
+                    </div>
+
+                    <div class="carrossel_item">
+                        <img src="assets/imagens/Viva_la_vida.jpg" alt="Viva la vida" class="item_carousel active_carro">
+                    </div>
+
+                    <div class="carrossel_item">
+                        <img src="assets/imagens/Cidade_de_Deus.jpg" alt="Cidade de Deus" class="item_carousel">
+                    </div>
+
+                    <div class="carrossel_item">
+                        <img src="assets/imagens/Jojo.jpg" alt="Jojo" class="item_carousel">
+                    </div>
+
+                    <div class="carrossel_item">
+                        <img src="assets/imagens/Jojo.jpg" alt="Jojo" class="item_carousel">
+                    </div>
+
                 </div>
             </div>
             <div class="blur seg"></div>
@@ -98,7 +119,8 @@
                     <p>Criado a partir da filosofia <br> <span class="span_infos">Mobile First</span></p>
                 </div>
                 <div class="items_infos">
-                    <p>Site <span class="span_infos">planejado</span> e <br> construido para <span class="span_infos">você</span></p>
+                    <p>Site <span class="span_infos">planejado</span> e <br> construido para <span
+                            class="span_infos">você</span></p>
                 </div>
             </div>
             <div class="blur quin"></div>
@@ -184,14 +206,16 @@
                         <img src="assets/imagens/icons/responsi.svg" alt="Lupa" class="icon_serv">
                     </div>
                     <h3 class="h3">Interface responsiva e intuitiva</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, rem. Ullam sunt quia hic, accusamus aspernatur totam nobis quisquam? </p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, rem. Ullam sunt quia hic,
+                        accusamus aspernatur totam nobis quisquam? </p>
                 </div>
                 <div class="items_serv">
                     <div class="div_icon">
                         <img src="assets/imagens/icons/search.svg" alt="Lupa" class="icon_serv">
                     </div>
                     <h3 class="h3">Buscar filmes por gênero e nome</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, rem. Ullam sunt quia hic, accusamus aspernatur totam nobis quisquam? </p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, rem. Ullam sunt quia hic,
+                        accusamus aspernatur totam nobis quisquam? </p>
                 </div>
             </div>
         </section>
@@ -203,10 +227,10 @@
         <div class="div_footer">
             <div class="items_footer">
                 <div class="title">
-                    <span class="logo_footer">Phikine</span>
                     <h3 class="h3_footer">PHIKINE</h3>
                 </div>
-                <p>Movida pelo sonho de vingança contra as pessoas que a transformaram em uma excluída no Japão do período Edo, uma jovem guerreira decide trilhar um caminho sangrento.</p>
+                <p>Movida pelo sonho de vingança contra as pessoas que a transformaram em uma excluída no Japão do
+                    período Edo, uma jovem guerreira decide trilhar um caminho sangrento.</p>
             </div>
             <div class="items_footer">
                 <h4 class="h4">NAVEGAÇÃO</h4>
@@ -241,7 +265,7 @@
                 <ul class="list_contact">
                     <li>
                         <i class="fa-brands fa-github"></i>
-                        <a href="https://github.com/DafnyAlmeida">GitHub</a>
+                        <a href="https://github.com/DafnyAlmeida" target="_blank">GitHub</a>
                     </li>
                     <li>
                         <i class="fa-brands fa-instagram"></i>
@@ -255,6 +279,9 @@
     <!-- FIM DO FOOTER -->
 
     <script>
+        // SCRIPT CARROSSEL
+
+
 
         // SCRIPT IFRAME
         function avisarProvisorio() {

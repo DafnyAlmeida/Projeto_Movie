@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/singup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Phikine | Sing Up</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container_form">
+            <div class="blur prim"></div>
+            <span class="logo_span">Phikine</span>
+            <h1>Criar nova conta</h1>
+            <p>Crie uma conta e aprecie suas produções favoritas</p>
+            <form action="#" method="post" autocomplete="on">
+                <div class="genero">
+                    <label for="inome">Nome</label>
+                    <input type="text" name="nome" id="inome" placeholder="Nome">
+                    <label for="igene">Gênero</label>
+                    <select name="gene" id="igene" required>
+                        <option value="" disabled selected>Gênero</option>
+                        <option value="feminino">Feminino</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="nao_bi">Não binário</option>
+                        <option value="fluido">Gênero fluido</option>
+                    </select>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="form_div">
+                    <label for="iemail" class="label">Email</label>
+                    <input type="email" name="email" id="iemail" autocomplete="email" required placeholder="Email">
+                </div>
+                <div class="form_div senha_eye">
+                    <label for="isen" class="label">Senha</label>
+                    <input type="password" name="sen" id="isen" autocomplete="current-password" required
+                        placeholder="Senha">
+                    <i class="fa-regular fa-eye-slash" id="toggleSenha"></i>
+                </div>
+
+                <div class="btn">
+                    <button type="submit" class="criar">Criar conta</button>
+                    <a href="#" class="aviso">Já tem uma conta? <span class="color">Logar</span></a>
+                </div>
+            </form>
+        </div>
+        <div class="container_carousel">
+            <div class="logo">
+                <a href="https://dafnyalmeida.github.io/Phikine/" rel="link">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </a>
+                <span class="span_logo">Log In</span>
+            </div>
+            <div class="slide active">
+                <video src="assets/videos/miranha.mp4" muted autoplay></video>
+                <img src="assets/imagens/logos/miranha.png" alt="Logo de Homem Aranha no Aranhaverso">
+            </div>
+
+            <div class="slide">
+                <video src="assets/videos/dandadan.mp4" autoplay muted></video>
+                <img src="assets/imagens/logos/dandadan.png" alt="Logo de Dandadan">
+            </div>
+
+            <div class="slide">
+                <video src="assets/videos/b99.mp4" autoplay muted></video>
+                <img src="assets/imagens/logos/b99.png" alt="Logo de Brooklyn 99">
+            </div>
+        </div>
+        <div class="blur seg"></div>
+    </div>
+
+    <script>
+        const inputSenha = document.getElementById("isen");
+        const toggleSenha = document.getElementById("toggleSenha");
+
+        toggleSenha.addEventListener("click", () => {
+            const type = inputSenha.type === "password" ? "text" : "password";
+            inputSenha.type = type;
+
+            toggleSenha.classList.toggle("fa-eye-slash");
+            toggleSenha.classList.toggle("fa-eye");
+        });
+
+        const slides = document.querySelectorAll('.slide');
+        let currentIndex = 0;
+        const interval = 10000; // tempo entre trocas (em ms)
+
+        function changeSlide() {
+            // remove a classe ativa do slide atual
+            slides[currentIndex].classList.remove('active');
+
+            // avança o índice (ou volta para o início)
+            currentIndex = (currentIndex + 1) % slides.length;
+
+            // adiciona a classe ativa ao próximo slide
+            slides[currentIndex].classList.add('active');
+
+            // opcional: reiniciar o vídeo quando o slide ficar ativo
+            const video = slides[currentIndex].querySelector('video');
+            if (video) {
+                video.currentTime = 0;
+                video.play();
+            }
+        }
+
+        // troca de slide a cada intervalo definido
+        setInterval(changeSlide, interval);
+    </script>
+</body>
+
+</html>
