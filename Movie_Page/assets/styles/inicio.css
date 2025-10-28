@@ -1,0 +1,257 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+/*-----------------------------------*\
+  #VARIAVEIS
+\*-----------------------------------*/
+
+:root {
+
+    /**
+   * cores
+   */
+
+    --cor01-bege: #D79F8E;
+    --cor02-rosa: #832C56;
+    --cor03-roxo: #32286C;
+    --cor04-azul: #153765;
+    --cor05-ciano: #0F8295;
+    --branco: #fff;
+    --preto: #000;
+    --branco-transpa: rgba(255, 255, 255, 0.1);
+    --cinza: #999;
+
+    /**
+   * tipografia
+   */
+
+    --ff-inter: 'Inter', sans-serif;
+
+    --fs-1: 0.87rem;
+    --fs-2: 0.9rem;
+    --fs-3: 1.5rem;
+    --fs-4: 1.4rem;
+    --fs-5: 1.3rem;
+
+    --fw-300: 300;
+    --fw-600: 600;
+    --fw-500: 500;
+
+    /**
+   * box shadow
+   */
+
+    --shadow-1: 0 0 5px #ffffff66;
+    --shadow-2: 0 0 20px 4px var(--black_5);
+
+    /**
+   * border radius
+   */
+
+    --radius-10: 10px;
+    --radius-15: 15px;
+    --radius-20: 20px;
+    --radius-30: 30px;
+    --radius-40: 40px;
+
+    /**
+   * transition
+   */
+
+    --transition-1: 0.3s ease;
+    --transition-2: 0.5s ease;
+
+}
+
+
+/*-----------------------------------*\
+  #RESET
+\*-----------------------------------*/
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    /* display: block; */
+}
+
+body, html {
+    background-color: var(--preto);
+    font-family: var(--ff-inter);
+    color: var(--branco);
+}
+
+
+
+/*-----------------------------------*\
+  #SCROLLBAR
+\*-----------------------------------*/
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--branco-transpa);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--branco);
+    border-radius: var(--radius-15);
+}
+
+/*-----------------------------------*\
+  #INÍCIO
+\*-----------------------------------*/
+
+section {
+  padding: 10px 0px;
+}
+
+#inicio {
+  width: calc(100vw - 10px);
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.video {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 90%;  
+  position: relative;
+}
+
+.video > video {
+  width: 100%;
+  border-radius: var(--radius-30);
+  object-fit: cover;
+  max-height: 570px;
+  border: 1px solid var(--branco);
+}
+
+.sect_inicio {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 55px;
+  gap: 30px;
+}
+
+.sect_inicio > img {
+  width: 300px;
+}
+
+.logo {
+  padding: 5px 18px;
+  flex: 1 1 auto;
+  border: 1px solid var(--branco);
+  border-radius: var(--radius-15);
+  font-size: 0.9em;
+  box-shadow: 0 0 5px #ffffff66;
+  /* margin-block-end: 20px; */
+}
+
+/* INÍCIO */
+
+.infos {
+    width: 90%;
+    background-color: var(--branco-transpa);
+    border: 1px solid var(--cinza);
+    border-radius: var(--radius-15);
+    padding: 40px;
+    margin-block: 70px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    align-content: center;
+    gap: 40px;
+}
+
+.prim_infos {
+  display: flex;
+  flex-flow: column;
+  gap: 18px;
+  flex: 1 1 70%;
+}
+
+.prim_infos > h1 {
+  text-transform: uppercase;
+  font-size: 2em;
+}
+
+.prim_infos > p {
+  line-height: 1.4em;
+  text-align: justify;
+}
+
+.infos_seg {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.genero {
+  line-height: 1.4em;
+  text-align: justify;
+}
+
+.title {
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
+.secao_infos {
+  display: flex;
+  width: 100%;
+  justify-content: start;
+  /* gap: 100px; */
+}
+
+.dispo > a > img {
+  width: 75%;
+}
+
+.dispo, .nota {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 50%;
+}
+
+.nota {gap: 20px;}
+
+.nota > div {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.nota > div > i {
+  color: yellow;
+  font-size: 2.5em;
+}
+
+.nota_prim {font-size: 2.4em;}
+
+.span_nota {
+  font-size: 1.1em;
+  color: var(--cinza);
+}

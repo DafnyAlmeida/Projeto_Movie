@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/styles/media_query.css">
+    <title>Phikine | Log In</title>
+</head>
+<body>
+    <div class="container">
+
+        <!-- VIDEO -->
+
+        <div class="container_carousel">
+            <div class="logo">
+                <a href="https://dafnyalmeida.github.io/Phikine/" rel="prev" title="Voltar para o início">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </a>
+                <span class="btn_media">Sing Up</span>
+            </div>
+            <div class="slide active">
+                <video src="assets/videos/gumball.mp4" muted autoplay></video>
+                <img src="assets/logos/gumball.png" alt="Logo de o Incrível Mundo de Gumball">
+            </div>
+
+            <div class="slide">
+                <video src="assets/videos/o_rei.mp4" muted autoplay></video>
+                <img src="assets/logos/o_rei.png" alt="O Rei de Porcelana">
+            </div>
+            <div class="slide">
+                <video src="assets/videos/the_witcher.mp4" muted autoplay></video>
+                <img src="assets/logos/the_witcher.png" alt="The Witcher">
+            </div>
+        </div>
+
+        <!-- FORMULARIO -->
+
+        <div class="container_form">
+            <div class="blur prim"></div>
+            <div class="logo_mobile">
+                <a href="https://dafnyalmeida.github.io/Phikine/" rel="prev" title="Voltar para o início">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </a>
+                <span class="btn_media">Sing Up</span>
+            </div>
+            <span class="logo_span">Phikine</span>
+            <h1>OLÁ, SEJA BEM-VINDO(A)</h1>
+            <p>Faça login e aprecie suas produções favoritas</p>
+            <form action="#" method="post" autocomplete="on">
+                <div class="form_div">
+                    <label for="iemail" class="label">Email</label>
+                    <input type="email" name="email" id="iemail" autocomplete="email" required placeholder="Email">
+                </div>
+                <div class="form_div">
+                    <label for="isen" class="label">Senha</label>
+                    <input type="password" name="sen" id="isen" autocomplete="current-password" required placeholder="Senha">
+                    <i class="fa-regular fa-eye-slash" id="toggleSenha"></i>
+                    <a href="#" class="aviso senha">Esqueci minha senha</a>
+                </div>
+                <div class="btn">
+                    <div class="divider">
+                        <span class="hr">Ou</span>
+                    </div>
+                    <button type="button" class="google">
+                        <span class="span_google">
+                            <img src="assets/imagens/google.svg" alt="Google logo">
+                        </span>
+                        Continue com o Google
+                    </button>
+                    <button type="submit" class="entrar">Entrar</button>
+                    <a href="#" class="aviso conta">Não tem uma conta? <span class="color">Criar</span></a>
+                </div>
+            </form>
+        </div>
+        <div class="blur seg"></div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+        const inputSenha = document.getElementById("isen");
+        const toggleSenha = document.getElementById("toggleSenha");
+
+        toggleSenha.addEventListener("click", () => {
+            const type = inputSenha.type === "password" ? "text" : "password";
+            inputSenha.type = type;
+
+            toggleSenha.classList.toggle("fa-eye");
+            toggleSenha.classList.toggle("fa-eye-slash");
+        });
+
+
+        const slides = document.querySelectorAll('.slide');
+        let currentIndex = 0;
+        const interval = 15000; // tempo entre trocas (em ms)
+
+        function changeSlide() {
+            // remove a classe ativa do slide atual
+            slides[currentIndex].classList.remove('active');
+
+            // avança o índice (ou volta para o início)
+            currentIndex = (currentIndex + 1) % slides.length;
+
+            // adiciona a classe ativa ao próximo slide
+            slides[currentIndex].classList.add('active');
+
+            // opcional: reiniciar o vídeo quando o slide ficar ativo
+            const video = slides[currentIndex].querySelector('video');
+            if (video) {
+                video.currentTime = 0;
+                video.play();
+            }
+        }
+
+        // troca de slide a cada intervalo definido
+        setInterval(changeSlide, interval);
+    </script>
+</body>
+</html>

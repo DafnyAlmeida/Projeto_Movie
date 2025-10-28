@@ -1,0 +1,53 @@
+
+/*-----------------------------------*\
+    #MEDIA QUERY
+\*-----------------------------------*/
+
+/* TELAS PEQUENAS E CELULAR*/
+
+@media screen and (max-width: 768px) {
+    .container_carousel {display: none;}
+
+    .container_form {height: 95%;}
+
+    .logo_mobile {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 70%;
+        margin-block-end: 50px;
+    }
+
+    .btn_media {font-size: 0.8em;}
+
+    .container_form > h1 {font-size: 1.9em;}
+
+    .container_form > p {font-size: 0.9em;}
+
+    .btn > button {
+        font-size: 0.9em;
+        padding: 10px 18px;
+        min-height: 30px;
+    }
+
+    .span_google {display: none;}
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+
+    /* BLUR */
+
+    /* HEADER */
+
+}
+
+
+/* TABLET */
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+}

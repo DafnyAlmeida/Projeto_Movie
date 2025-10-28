@@ -192,6 +192,7 @@ label {display: none;}
     display: flex;
     justify-content: space-between;
     align-items: center;
+    align-content: stretch;
     gap: 20px;
     flex-flow: row wrap;
     width: 100%;
