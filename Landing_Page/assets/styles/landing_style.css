@@ -773,8 +773,8 @@ SECTION SERVIÇOS (04)
     }
 
     /*-----------------------------------*\
-    #FOOTER
-  \*-----------------------------------*/
+        #FOOTER
+    \*-----------------------------------*/
 
 
     #footer {
@@ -857,7 +857,13 @@ SECTION SERVIÇOS (04)
 
 /* TABLET */
 
+@media screen and (min-width: 763px) and (max-width: 935px){
+    #carousel {
+        display: none;
+    }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
-
-}
+    .items_infos:nth-child(2) {
+        border-right: none;
+        border-left: none;
+    }
+} 

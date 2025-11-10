@@ -176,6 +176,8 @@ label {display: none;}
     margin-block-end: 10px;
 }
 
+.logo_mobile {display: none;}
+
 .container_form > h1 {
     font-size: 2.3em;
     text-transform: uppercase;

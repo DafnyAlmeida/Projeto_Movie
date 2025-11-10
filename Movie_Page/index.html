@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,11 @@
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- IMPORTAÇÃO DO JS -->
+    <script src="assets/scripts/script.js" defer></script>
+
     <!-- IMPOTAÇÃO DOS CSS -->
+    <link rel="stylesheet" href="assets/styles/style.css">
     <link rel="stylesheet" href="assets/styles/header.css">
     <link rel="stylesheet" href="assets/styles/inicio.css">
     <link rel="stylesheet" href="assets/styles/trailers.css">
@@ -21,7 +26,7 @@
     <link rel="stylesheet" href="assets/styles/duvidas.css">
     <link rel="stylesheet" href="assets/styles/semelhantes.css">
     <link rel="stylesheet" href="assets/styles/footer.css">
-
+    <link rel="stylesheet" href="assets/styles/media_query.css">
 
     <title>Phikine | Arcane</title>
 </head>
@@ -30,11 +35,56 @@
 
     <!-- INÍCIO DE HEADER -->
     <header id="header">
+        <div class="container_header_mobile">
+            <a href="#">
+                <i class="fa-solid fa-chevron-left"></i>
+            </a>
+            <div class="menu">
+                <div class="infos_menu">
+                    <span class="logo">Phikine</span>
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <nav>
+                    <ul class="list_header_mobile">
+                        <li>
+                            <a href="#inicio">Início</a>
+                        </li>
+                        <li>
+                            <a href="#trailers">Trailers</a>
+                        </li>
+                        <li>
+                            <a href="#episodios">Episódios</a>
+                        </li>
+                        <li>
+                            <a href="#atores">Atores</a>
+                        </li>
+                        <li>
+                            <a href="#criticas">Críticas</a>
+                        </li>
+                        <li>
+                            <a href="#cinema">Cinematografia</a>
+                        </li>
+                        <li>
+                            <a href="#trilha">Trilha</a>
+                        </li>
+                        <li>
+                            <a href="#duvidas">Dúvidas</a>
+                        </li>
+                        <li>
+                            <a href="#semelhantes">Semelhantes</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+
+        </div>
+
         <div class="container_header">
             <a href="#">
                 <i class="fa-solid fa-chevron-left"></i>
             </a>
-            <nav>
+            <nav class="nav_desktop">
                 <ul class="list_header">
                     <li>
                         <a href="#inicio">Início</a>
@@ -85,12 +135,14 @@
                 <div class="sect_inicio">
                     <span class="logo">Phikine</span>
                     <img src="assets/midia/inicio/Arcane.png" alt="Logo de Arcane">
-                    <button>
-                        Adicionar a lista <i class="fa-solid fa-plus"></i>
-                    </button>
-                    <div id="opcoes" class="opcoes">
-                        <button class="btn-opcao btn">Adicionar aos assistido</button>
-                        <button class="btn-opcao btn">Quero assistir</button>
+                    <div id="menu_filme" class="menu-filme">
+                        <button id="btn_open_opcao">
+                            Adicionar a lista <i class="fa-solid fa-plus"></i>
+                        </button>
+                        <div id="opcoes" class="opcoes">
+                            <button class="btn-opcao btn">Adicionar aos assistido</button>
+                            <button class="btn-opcao btn">Quero assistir</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -98,8 +150,13 @@
             <div class="infos">
                 <div class="prim_infos">
                     <h1>Arcane</h1>
-                    <p class="p_infos">2024 &bull; 2 temporadas &bull; A16</p>
-                    <p class="sinopse">Em meio ao conflito entre as cidades-gêmeas de Piltover e Zaun, duas irmãs lutam em lados opostos de uma guerra entre tecnologias mágicas e convicções incompatíveis.</p>
+                    <p class="p_infos">
+                        2024 &bull; 2 temporadas &bull; A16
+                    </p>
+                    <p class="sinopse">
+                        Em meio ao conflito entre as cidades-gêmeas de Piltover e Zaun, duas irmãs lutam
+                        em lados opostos de uma guerra entre tecnologias mágicas e convicções incompatíveis
+                    </p>
                 </div>
 
                 <div class="infos_seg">
@@ -110,19 +167,19 @@
                     <div class="secao_infos">
                         <div class="dispo">
                             <span class="title">Disponível em:</span>
-                            <a href="https://www.netflix com/br/" rel="no-referrer">
+                            <a href="https://www.netflix.com/br/" rel="no-referrer" target="_blank">
                                 <img src="assets/midia/inicio/netflix.png" alt="Logo da Netflix">
                             </a>
                         </div>
                         <div class="nota">
-                            <span class="title">IMDb:</span>
-                            <div>
-                                <i class="fa-regular fa-star"></i>
-                                <p>
-                                    <span class="nota_prim">9,0</span>
-                                    <span class="span_nota">/10</span>
-                                </p>
-                            </div>
+                                <a href="https://www.imdb.com/title/tt11126994/" target="_blank"><span class="title">IMDb:</span></a>
+                                <div>
+                                    <i class="fa-regular fa-star"></i>
+                                    <p>
+                                        <span class="nota_prim">9,0</span>
+                                        <span class="span_nota">/10</span>
+                                    </p>
+                                </div>
                         </div>
                     </div>
                 </div>
@@ -132,36 +189,42 @@
 
         <!-- INÍCIO DA SEÇÃO TRAILERS -->
         <section id="trailers">
-            <h1>Trailers</h1>
-            <div class="carousel_trailers">
-                <div class="slide">
-                    <div class="trailer">
-                        <video src="#" poster="assets/midia/trailers/trailer1.png"></video>
-                        <span>1min 37s</span>
+            <h1 class="h1">Trailers</h1>
+            <div class="container_trailers">
+                <div class="carousel_trailers">
+                    <div class="slide">
+                        <a href="">
+                            <div class="trailer">
+                                <video src="#" poster="assets/midia/trailers/trailer1.png"></video>
+                                <span>1min 37s</span>
+                            </div>
+                        </a>
+                        <h2>Teaser</h2>
+                        <p>Temporada 2 (Teaser)</p>
                     </div>
-                    <p>Teaser</p>
-                    <p>Temporada 2 (Teaser)</p>
+                    <div class="slide">
+                        <div class="trailer">
+                            <video src="#" poster="assets/midia/trailers/trailer2.png"></video>
+                            <span>1min 37s</span>
+                        </div>
+                        <h2>Teaser</h2>
+                        <p>Temporada 2 (Teaser)</p>
+                    </div>
+                    <div class="slide">
+                        <div class="trailer">
+                            <video src="" poster="assets/midia/trailers/trailer3.png"></video>
+                            <span>1min 37s</span>
+                        </div>
+                        <h2>Teaser</h2>
+                        <p>Temporada 2 (Teaser)</p>
+                    </div>
                 </div>
-                <div class="slide">
-                    <div class="trailer">
-                        <video src="#" poster="assets/midia/trailers/trailer2.png"></video>
-                        <span>1min 37s</span>
-                    </div>
-                    <p>Teaser</p>
-                    <p>Temporada 2 (Teaser)</p>
-                </div>
-                <div class="slide">
-                    <div class="trailer">
-                        <video src="" poster="assets/midia/trailers/trailer3.png"></video>
-                        <span>1min 37s</span>
-                    </div>
-                    <p>Teaser</p>
-                    <p>Temporada 2 (Teaser)</p>
+                <div class="div_btn">
+                    <button title="avançar" class="btn_trailers">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
                 </div>
             </div>
-            <button title="avançar">
-                <i class="fa-solid fa-chevron-right"></i>
-            </button>
         </section>
         <!-- FIM DA SEÇÃO TRAILERS -->
 
@@ -182,7 +245,10 @@
                             <span class="tempo_ep">40min</span>
                         </div>
                         <h2>1. Entrando na brincadeira</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio itaque tempore eos earum quidem dolor sunt assumenda.</p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio itaque tempore eos
+                            earum quidem dolor sunt assumenda.
+                        </p>
                     </div>
                     <div class="slide_ep">
                         <div class="ep">
@@ -190,8 +256,9 @@
                             <span class="tempo_ep">40min</span>
                         </div>
                         <h2>2. Entrando na brincadeira</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio itaque tempore eos earum
-                            quidem dolor sunt assumenda.</p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio itaque tempore eos earum quidem dolor sunt assumenda.
+                        </p>
                     </div>
                     <div class="slide_ep">
                         <div class="ep">
@@ -199,8 +266,9 @@
                             <span class="tempo_ep">40min</span>
                         </div>
                         <h2>3. Entrando na brincadeira</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio itaque tempore eos earum
-                            quidem dolor sunt assumenda.</p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio itaque tempore eos earum quidem dolor sunt assumenda.
+                        </p>
                     </div>
                 </div>
                 <button title="avançar" class="btn_avancar">
@@ -264,7 +332,7 @@
 
         <!-- INÍCIO DA SEÇÃO CRITICAS -->
         <section id="criticas">
-            <h1>Críticas</h1>
+            <h1 class="h1">Críticas</h1>
             <div class="criticas_container">
 
                 <div class="coment">
@@ -276,42 +344,44 @@
                         <i class="fa-solid fa-star"></i>
                         <span>5,0 estrelas</span>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed saepe quae explicabo sint iusto.
-                        Voluptatibus doloremque quas repellat ab. Illum, porro deserunt sit possimus magni quo facere
-                        sunt
-                        minus vel?</p>
+                    <p>
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                        classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a
+                        Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin
+                        words, consectetur, from a Lorem Ipsum
+                    </p>
                 </div>
 
                 <div class="carousel_criticas">
-                    <button title="voltar">
+                    <!-- <button title="voltar">
                         <i class="fa-solid fa-chevron-left"></i>
-                    </button>
+                    </button> -->
 
                     <div class="criticas_track">
                         <div class="slide_critica active_critica" data-index="0">
-                            <img src="" alt="">
-                            <div>
-                                <p>Isabela Boscov</p>
+                            <img src="assets/midia/criticas/isabela.png" alt="">
+                            <div class="criticos_infos">
+                                <h2>Isabela Boscov</h2>
                                 <p>Jornalista e <span>crítica</span> de cinema</p>
                             </div>
                         </div>
                         <div class="slide_critica active_critica" data-index="1">
-                            <img src="" alt="">
-                            <div>
-                                <p>Isabela Boscov</p>
+                            <img src="assets/midia/criticas/gaveta.png" alt="">
+                            <div class="criticos_infos">
+                                <h2>Anderson Gaveta</h2>
                                 <p>Jornalista e <span>crítica</span> de cinema</p>
                             </div>
                         </div>
                         <div class="slide_critica active_critica" data-index="2">
-                            <img src="" alt="">
-                            <div>
-                                <p>Isabela Boscov</p>
+                            <img src="assets/midia/criticas/ph.png" alt="">
+                            <div class="criticos_infos">
+                                <h2>PH Santos</h2>
                                 <p>Jornalista e <span>crítica</span> de cinema</p>
                             </div>
                         </div>
                     </div>
 
-                    <button title="avançar">
+                    <button title="avançar" class="btn_avancar">
                         <i class="fa-solid fa-chevron-right"></i>
                     </button>
                 </div>
@@ -328,34 +398,25 @@
             <h1 class="h1">Cinematografia</h1>
             <div class="carousel_cinema">
                 <div class="slides_cinema">
-                    <div class="slide_cinema">
-                        <img src="assets/midia/cinema/img1.png" alt="">
-                    </div>
-                    <div class="slide_cinema">
-                        <img src="assets/midia/cinema/img2.png" alt="">
-                    </div>
-                    <div class="slide_cinema">
-                        <img src="assets/midia/cinema/img3.png" alt="">
-                    </div>
+                    <img src="assets/midia/cinema/img1.png" alt="" class="fundo">
+                    <img src="assets/midia/cinema/img2.png" alt="" class="frente">
+                    <img src="assets/midia/cinema/img3.png" alt="" class="fundo">
                 </div>
 
-                <button class="crit_prev">
-                    <i class="fa-solid fa-chevron-left"></i>
-                </button>
-
-                <div class="indicadores">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <div class="container_indicadores">
+                    <button class="crit_prev">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <div class="indicadores">
+                        <span class="span_sec"></span>
+                        <span class="span_prin"></span>
+                        <span class="span_sec"></span>
+                    </div>
+                    <button class="crit_next">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
                 </div>
-
-                <button class="crit_next">
-                    <i class="fa-solid fa-chevron-right"></i>
-                </button>
             </div>
-            <button title="avançar">
-                <i class="fa-solid fa-chevron-right"></i>
-            </button>
         </section>
         <!-- FIM DA SEÇÃO CINEMATOGRAFIA -->
 

@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+/*-----------------------------------*\
+  #VARIAVEIS
+\*-----------------------------------*/
+
+:root {
+
+    /**
+   * cores
+   */
+
+    --cor01-bege: #D79F8E;
+    --cor02-rosa: #832C56;
+    --cor03-roxo: #32286C;
+    --cor04-azul: #153765;
+    --cor05-ciano: #0F8295;
+    --branco: #fff;
+    --preto: #000;
+    --branco-transpa: rgba(255, 255, 255, 0.1);
+    --cinza: #999;
+
+    /**
+   * tipografia
+   */
+
+    --ff-inter: 'Inter', sans-serif;
+
+    --fs-1: 0.87rem;
+    --fs-2: 0.9rem;
+    --fs-3: 1.5rem;
+    --fs-4: 1.4rem;
+    --fs-5: 1.3rem;
+
+    --fw-300: 300;
+    --fw-600: 600;
+    --fw-500: 500;
+
+    /**
+   * box shadow
+   */
+
+    --shadow-1: 0 0 5px #ffffff66;
+    --shadow-2: 0 0 20px 4px var(--black_5);
+
+    /**
+   * border radius
+   */
+
+    --radius-10: 10px;
+    --radius-15: 15px;
+    --radius-20: 20px;
+    --radius-30: 30px;
+    --radius-40: 40px;
+
+    /**
+   * transition
+   */
+
+    --transition-1: 0.3s ease;
+    --transition-2: 0.5s ease;
+
+}
+
+/*-----------------------------------*\
+  #TRAILERS
+\*-----------------------------------*/
+
+#trailers {
+    padding: 0px 100px;
+}
+
+.carousel_trailers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    /* border: 1px solid white; */
+}
+
+.container_trailers {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    /* border: 1px solid white; */
+}
+
+.div_btn {
+    display: flex;
+    padding: 65px 0px;
+    flex-flow: column nowrap;
+    align-self: flex-start;
+}
+
+.btn_trailers {
+    align-self: center;
+    min-height: 60px;
+    min-width: 23px;
+    border-radius: var(--radius-20);
+    background-color: var(--branco-transpa);
+    border: 1px solid var(--cinza);
+    color: var(--branco);
+    margin-inline-start: 20px;
+}
+
+.slide {
+    width: 40%;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 8px;
+    /* border: 1px solid white; */
+}
+
+.slide > h2 {
+    text-transform: uppercase;
+    color: var(--cinza);
+}
+
+.slide > p {
+    font-size: 1.1em;
+}
+
+.trailer {
+    height: 80%;
+    /* border: 1px solid white; */
+    position: relative;
+}
+
+.trailer > video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--radius-15);
+}
+
+.trailer > span {
+    position: absolute;
+    right: 25px;
+    bottom: 18px;
+    background-color: var(--branco-transpa);
+    border: 1px solid var(--branco);
+    padding: 5px 10px;
+    border-radius: var(--radius-15);
+    font-size: 0.8em;
+}
+
+

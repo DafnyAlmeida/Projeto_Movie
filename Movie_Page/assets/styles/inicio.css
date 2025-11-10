@@ -114,10 +114,6 @@ body, html {
   #INÍCIO
 \*-----------------------------------*/
 
-section {
-  padding: 10px 0px;
-}
-
 #inicio {
   width: calc(100vw - 10px);
   display: flex;
@@ -170,17 +166,17 @@ section {
 /* INÍCIO */
 
 .infos {
-    width: 90%;
-    background-color: var(--branco-transpa);
-    border: 1px solid var(--cinza);
-    border-radius: var(--radius-15);
-    padding: 40px;
-    margin-block: 70px;
-    display: flex;
-    justify-content: space-between;
-    flex-flow: row nowrap;
-    align-content: center;
-    gap: 40px;
+  width: 90%;
+  background-color: var(--branco-transpa);
+  border: 1px solid var(--cinza);
+  border-radius: var(--radius-15);
+  padding: 40px;
+  margin-block-start: 70px;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+  align-content: center;
+  gap: 40px;
 }
 
 .prim_infos {
