@@ -86,7 +86,7 @@ Quer ajudar o Phikine a crescer? Toda contribuição e troca de conhecimento é 
 ### Como contribuir?
 
 <p style="text-align: justify;">
-Siga os passos abaixo:
+Siga os passos abaixo: 
 </p>
 
 `1.` *Faça um fork* deste repositório. <br/>
