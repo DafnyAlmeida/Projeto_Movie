@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="assets/styles/landing_style.css">
 
     <!-- IMPOTAÇÃO DO FAVICON -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/svg+xml" href="assets/imagens/icons/icon.svg">
 
     <title>Phikine | Site oficial</title>
 
@@ -23,10 +23,10 @@
     <header class="header">
 
         <div class="blur prim"></div>
-        
+
         <div class="div_header" id="header">
 
-            <a href="#" class="btn btn_mobile">
+            <a href="../Login_Page/index.html" class="btn btn_mobile">
                 Fazer Login
             </a>
 
@@ -48,11 +48,11 @@
             </div>
 
             <div class="items">
-                <a href="#" class="btn_login btn">
+                <a href="../Login_Page/index.html" class="btn_login btn">
                     Começar agora
                     <i class="fa-solid fa-angle-right"></i>
                 </a>
-                <a href="#" class="btn_create btn">
+                <a href="../Singup_page/index.html" class="btn_create btn">
                     Criar conta
                 </a>
             </div>
@@ -65,39 +65,73 @@
     <!-- INÍCIO DO MAIN -->
     <main>
         <section id="inicio">
-            <span class="span_inicio">SÓ NO PHIKINE</span>
-            <h1 class="h1">TUDO DE MELHOR NO <br> AUDIOVISUAL EM UM SÓ LUGAR</h1>
-            <a href="#" class="btn btn_inicio">CRIAR UMA CONTA GRATUITA</a>
+            <span class="span_inicio animar">SÓ NO PHIKINE</span>
+            <h1 class="h1 animar">TUDO DE MELHOR NO <br> AUDIOVISUAL EM UM SÓ LUGAR</h1>
+            <a href="../Singup_page/index.html" class="btn btn_inicio animar">CRIAR UMA CONTA GRATUITA</a>
 
             <div id="carousel">
                 <div class="carousel_track">
+                    <div class="carousel_group">
 
-                    <div class="carrossel_item">
-                        <img src="assets/imagens/Stanger_Things_700x350.jpg" alt="Cena de Stanger Things" class="item_carousel">
+                        <div class="carrossel_item">
+                            <img src="assets/imagens/Stanger_Things_700x350.jpg" alt="Cena de Stanger Things"
+                                class="item_carousel">
+                        </div>
+
+                        <div class="carrossel_item">
+                            <img src="assets/imagens/A_Lista_de_Schindler.jpg" alt="A Lista de Schindler"
+                                class="item_carousel">
+                        </div>
+
+                        <div class="carrossel_item">
+                            <img src="assets/imagens/Central_do_Brasil.jpg" alt="Central do Brasil"
+                                class="item_carousel">
+                        </div>
+
+                        <div class="carrossel_item">
+                            <img src="assets/imagens/Viva_la_vida.jpg" alt="Viva la vida"
+                                class="item_carousel active_carro">
+                        </div>
+
+                        <div class="carrossel_item">
+                            <img src="assets/imagens/Cidade_de_Deus.jpg" alt="Cidade de Deus" class="item_carousel">
+                        </div>
+
+                        <div class="carrossel_item">
+                            <img src="assets/imagens/Jojo.jpg" alt="Jojo" class="item_carousel">
+                        </div>
                     </div>
 
-                    <div class="carrossel_item">
-                        <img src="assets/imagens/A_Lista_de_Schindler.jpg" alt="A Lista de Schindler" class="item_carousel">
-                    </div>
 
-                    <div class="carrossel_item">
-                        <img src="assets/imagens/Central_do_Brasil.jpg" alt="Central do Brasil" class="item_carousel">
-                    </div>
+                    <div class="carousel_group">
 
-                    <div class="carrossel_item">
-                        <img src="assets/imagens/Viva_la_vida.jpg" alt="Viva la vida" class="item_carousel active_carro">
-                    </div>
+                        <div class="carrossel_item">
+                            <img src="assets/imagens/Stanger_Things_700x350.jpg" alt="Cena de Stanger Things"
+                                class="item_carousel">
+                        </div>
 
-                    <div class="carrossel_item">
-                        <img src="assets/imagens/Cidade_de_Deus.jpg" alt="Cidade de Deus" class="item_carousel">
-                    </div>
+                        <div class="carrossel_item">
+                            <img src="assets/imagens/A_Lista_de_Schindler.jpg" alt="A Lista de Schindler"
+                                class="item_carousel">
+                        </div>
 
-                    <div class="carrossel_item">
-                        <img src="assets/imagens/Jojo.jpg" alt="Jojo" class="item_carousel">
-                    </div>
+                        <div class="carrossel_item">
+                            <img src="assets/imagens/Central_do_Brasil.jpg" alt="Central do Brasil"
+                                class="item_carousel">
+                        </div>
 
-                    <div class="carrossel_item">
-                        <img src="assets/imagens/Jojo.jpg" alt="Jojo" class="item_carousel">
+                        <div class="carrossel_item">
+                            <img src="assets/imagens/Viva_la_vida.jpg" alt="Viva la vida"
+                                class="item_carousel active_carro">
+                        </div>
+
+                        <div class="carrossel_item">
+                            <img src="assets/imagens/Cidade_de_Deus.jpg" alt="Cidade de Deus" class="item_carousel">
+                        </div>
+
+                        <div class="carrossel_item">
+                            <img src="assets/imagens/Jojo.jpg" alt="Jojo" class="item_carousel">
+                        </div>
                     </div>
 
                 </div>
@@ -105,7 +139,7 @@
             <div class="blur seg"></div>
         </section>
 
-        <section id="infos">
+        <section id="infos" class="animar">
             <div class="blur quar"></div>
             <div class="div_infos">
                 <div class="items_infos">
@@ -127,21 +161,20 @@
 
         <section id="previa">
             <div class="items_previa">
-                <h2 class="h2">O PHIKINE</h2>
-                <p class="text_subtitle">Phikine é o espaço para quem ama cinema. <br> Aqui você encontra informações
+                <h2 class="h2 animar">O PHIKINE</h2>
+                <p class="text_subtitle animar">Phikine é o espaço para quem ama cinema. <br> Aqui você encontra informações
                     sobre seus filmes favoritos, marque o que já viu ou quer ver e viva o melhor do mundo do cinema —
                     simples, prático e divertido.</p>
             </div>
             <div class="items_previa">
-                <ul class="list_previa">
+                <ul class="list_previa animar">
                     <li>
                         <a href="../indez/home.html" target="tela" class="link_previa">
                             Veja aqui os filmes
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.cursoemvideo.com/curso/html5-css3-modulo1/" target="tela"
-                            class="link_previa">
+                        <a href="#" target="tela" class="link_previa" onclick="avisarProvisorio(); return false;">
                             Produção
                         </a>
                     </li>
@@ -160,7 +193,7 @@
             </div>
         </section>
 
-        <section id="services">
+        <section id="services" class="animar">
             <h2 class="h2">O QUE FAZEMOS POR VOCÊ</h2>
             <p class="text_subtitle">O Phikine foi criado para quem vive e respira cinema, com experiências que vão além
                 da tela. Confira abaixo tudo o que preparamos para você aproveitar ao máximo esse universo.</p>
@@ -170,26 +203,30 @@
                         <img src="assets/imagens/icons/check.svg" alt="Lupa" class="icon_serv">
                     </div>
                     <h3 class="h3">Marcar como "Assistido" ou "Quero ver"</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, rem. Ullam sunt quia hic,
-                        accusamus
-                        aspernatur totam nobis quisquam? </p>
+                    <p>
+                        Marque seus filmes para organizar sua jornada. Use “Quero ver” para guardar o que ainda pretende
+                        assistir e “Assistido” para registrar o que já viu.
+                    </p>
                 </div>
                 <div class="items_serv">
                     <div class="div_icon">
                         <img src="assets/imagens/icons/design.svg" alt="Lupa" class="icon_serv">
                     </div>
                     <h3 class="h3">Visual moderno, elegante e criativo</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, rem. Ullam sunt quia hic,
-                        accusamus
-                        aspernatur totam nobis quisquam? </p>
+                    <p>
+                        Phikine combina elegância e modernidade em cada detalhe, oferecendo uma experiência criativa e
+                        envolvente que transforma a exploração de filmes.
+                    </p>
                 </div>
                 <div class="items_serv">
                     <div class="div_icon">
                         <img src="assets/imagens/icons/infos.svg" alt="Lupa" class="icon_serv">
                     </div>
                     <h3 class="h3">Saiba tudo sobre suas produções favoritas</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, rem. Ullam sunt quia hic,
-                        accusamus aspernatur totam nobis quisquam? </p>
+                    <p>
+                        Descubra tudo sobre suas produções favoritas com Phikine: sinopse, elenco, trailers e detalhes
+                        em um só lugar, tornando cada filme ou série fácil de explorar e acompanhar.
+                    </p>
                 </div>
                 <div class="items_serv">
                     <div class="div_icon">
@@ -197,8 +234,8 @@
                     </div>
                     <h3 class="h3">Espaço para comentários pessoais</h3>
                     <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, rem. Ullam sunt quia hic,
-                        accusamus aspernatur totam nobis quisquam?
+                        Compartilhe suas impressões e opiniões diretamente em cada filme ou série. Phikine oferece um
+                        espaço para comentários, conectando você à sua experiência cinematográfica.
                     </p>
                 </div>
                 <div class="items_serv">
@@ -207,8 +244,8 @@
                     </div>
                     <h3 class="h3">Interface responsiva e intuitiva</h3>
                     <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, rem. Ullam sunt quia hic,
-                        accusamus aspernatur totam nobis quisquam?
+                        Navegue com conforto em qualquer dispositivo. Phikine oferece uma interface responsiva e
+                        intuitiva, que se adapta ao seu ritmo e transforma sua experiência.
                     </p>
                 </div>
                 <div class="items_serv">
@@ -217,8 +254,8 @@
                     </div>
                     <h3 class="h3">Buscar filmes por gênero e nome</h3>
                     <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, rem. Ullam sunt quia hic,
-                        accusamus aspernatur totam nobis quisquam?
+                        Encontre filmes rapidamente do seu jeito. Phikine permite buscar por gênero ou nome, facilitando
+                        a descoberta de novas histórias e tornando a exploração do catálogo prática e rápida.
                     </p>
                 </div>
             </div>
@@ -259,10 +296,10 @@
                         <a href="landing.html">Início</a>
                     </li>
                     <li>
-                        <a href="#">Home</a>
+                        <a href="../Home_Page/index.html">Home</a>
                     </li>
                     <li>
-                        <a href="#">Produção</a>
+                        <a href="../Movie_Page/index.html">Produção</a>
                     </li>
                 </ul>
             </div>
@@ -271,11 +308,11 @@
                 <ul class="list_contact">
                     <li>
                         <i class="fa-brands fa-github"></i>
-                        <a rel="noopener" href="https://github.com/DafnyAlmeida" target="_blank">GitHub</a>
+                        <a href="https://github.com/DafnyAlmeida">GitHub</a>
                     </li>
                     <li>
                         <i class="fa-brands fa-instagram"></i>
-                        <a href="#">Instagram</a>
+                        <a href="https://www.instagram.com/dafny4282/?next=%2F">Instagram</a>
                     </li>
                 </ul>
             </div>
@@ -285,9 +322,6 @@
     <!-- FIM DO FOOTER -->
 
     <script>
-        // SCRIPT CARROSSEL
-
-
 
         // SCRIPT IFRAME
         function avisarProvisorio() {
@@ -306,13 +340,25 @@
         // SCRIPT DO HEADER
         window.addEventListener("scroll", function () {
             const header = document.getElementById("header");
-            if (window.scrollY > 50) { // quando rolar 50px ou mais
+            if (window.scrollY > 50) {
                 header.classList.add("scrolled");
             } else {
                 header.classList.remove("scrolled");
             }
         });
 
+    </script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script>
+        ScrollReveal().reveal('.animar', {
+            origin: 'left',
+            distance: '30px',
+            duration: 2500,
+            opacity: 1,
+            reset: false
+        });
     </script>
 </body>
 </html>

@@ -288,7 +288,9 @@ input:focus::placeholder {
     width: 100%;
 }
 
-.btn > button {
+.a_btn {width: 50%;}
+
+.criar {
     margin-block-start: 25px;
     font-size: 1.1em;
     padding: 9px 15px;
@@ -297,7 +299,7 @@ input:focus::placeholder {
     min-height: 45px;
     cursor: pointer;
     transition: transform .4s ease;
-    width: 50%;
+    width: 100%;
     color: var(--branco);
     background-color: var(--branco-transpa);
 }

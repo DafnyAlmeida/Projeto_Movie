@@ -9,9 +9,7 @@
 
 :root {
 
-    /**
-   * cores
-   */
+    /* cores */
 
     --cor01-bege: #D79F8E;
     --cor02-rosa: #832C56;
@@ -23,9 +21,7 @@
     --branco-transpa: rgba(255, 255, 255, 0.1);
     --cinza: #999;
 
-    /**
-   * tipografia
-   */
+    /* tipografia */
 
     --ff-inter: 'Inter', sans-serif;
 
@@ -39,17 +35,12 @@
     --fw-600: 600;
     --fw-500: 500;
 
-    /**
-   * box shadow
-   */
+    /* box shadow */
 
     --shadow-1: 0 0 5px #ffffff66;
-    ;
     --shadow-2: 0 0 20px 4px var(--black_5);
 
-    /**
-   * border radius
-   */
+    /* border radius */
 
     --radius-10: 10px;
     --radius-15: 15px;
@@ -57,13 +48,10 @@
     --radius-30: 30px;
     --radius-40: 40px;
 
-    /**
-   * transition
-   */
+    /* transition */
 
     --transition-1: 0.3s ease;
     --transition-2: 0.5s ease;
-
 }
 
 
@@ -152,6 +140,19 @@ html {
     border-radius: var(--radius-15);
 }
 
+/* - Flex-basis
+        * Auto (Faz com que ele adapte seu tamanho para caber o conteudo que tem dentro)
+        * 000px (Faz com que ele tenha essa quantidade de pixels)
+
+    - Flex-shrink (encolhimento)
+        * 1 (padrão / significa que pode encolher)
+        * 0 (não pode encolher)
+
+    - Flex-grow (crescimento)
+        * 0 (padrão / não pode crescer)
+        * 1 (pode crescer)
+        * 2 (Faz com que ele cresça oi dobro do 1 porque 2 é o dobro de 1) */
+
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
@@ -221,16 +222,12 @@ header {
     transition: width .5s ease;
 }
 
-.navbar_link:hover::after {
-    width: 100%;
-}
+.navbar_link:hover::after {width: 100%;}
 
-.btn_mobile {
-    display: none;
-}
+.btn_mobile {display: none;}
 
 .btn {
-    flex: 1 1 auto;
+    flex: 0 1 auto;
     border: 1px solid var(--branco);
     border-radius: var(--radius-30);
 }
@@ -255,13 +252,9 @@ header {
     padding: 5px 15px;
 }
 
-.btn_create:hover {
-    transform: scale(1.04);
-}
+.btn_create:hover {transform: scale(1.04);}
 
-.span_mobile {
-    display: none;
-}
+.span_mobile {display: none;}
 
 /*-----------------------------------*\
   #MAIN
@@ -284,6 +277,7 @@ header {
     background: linear-gradient(#111, #111) padding-box, linear-gradient(45deg, var(--cor01-bege), var(--cor02-rosa), var(--cor03-roxo), var(--cor04-azul), var(--cor05-ciano)) border-box;
     border-radius: var(--radius-15);
     font-size: 0.9em;
+    /* box-shadow: <deslocamento-horizontal> <deslocamento-vertical> <raio-desfoque> <raio-espalhamento> <cor>;*/
     box-shadow: 0 0 5px #ffffff66;
 }
 
@@ -296,7 +290,7 @@ header {
 
 .btn_inicio {
     background-color: white;
-    color: black;
+    color: var(--preto);
     padding: 8px 20px;
     font-weight: 600;
     font-size: 0.8em;
@@ -304,7 +298,7 @@ header {
 }
 
 .btn_inicio:hover {
-    color: white;
+    color: var(--branco);
     background-color: transparent;
     transform: scale(1.1);
 }
@@ -312,47 +306,66 @@ header {
 /* CARROSSEL */
 
 #carousel {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    margin-block-start: 60px;
-    width: 90%;
+    margin-block-start: 40px;
+    width: 100%;
     overflow: hidden;
     position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    height: 300px;
 }
 
 .carousel_track {
     display: flex;
-    transition: transform .4s ease;
     gap: 1em;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    white-space: nowrap;
+    animation: scroll 15s linear infinite;
+    transition: transform .4s ease;
+    white-space: nowrap;
+    max-height: 100%;
+    width: max-content;
+}
+    
+.carousel_group {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  height: 100%;
 }
 
 .carrossel_item {
-    min-width: 33.33%;
-    height: 240px;
     text-align: center;
-    transition: all .4s ease-in-out;
+    transition: all .4s ease;
     transform: scale(0.9);
+    flex-shrink: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.carousel_track img:hover {transform: scale(1.05);}
 
 .item_carousel {
     width: 100%;
-    height: 240px;
+    height: 80%;
     border-radius: var(--radius-10);
     object-fit: cover;
-    /* flex: 0 0 364px; */
     border: 1px solid rgb(103, 103, 103);
-    /* transition: all .4s ease;
-    transform: scale(0.8); */
+    transition: all .4s ease;
+    flex-shrink: 0;
+    vertical-align: middle;
 }
 
-.destaque {
-    border: 1px solid rgb(103, 103, 103);
-    transform: scale(1.1);
-    z-index: 10;
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 /* 
@@ -394,9 +407,7 @@ SECTION INFOR (02)
     transition: transform .3s ease;
 }
 
-.items_infos:hover {
-    transform: scale(1.2);
-}
+.items_infos:hover {transform: scale(1.2);}
 
 .items_infos>p {
     font-size: 0.87em;
@@ -410,15 +421,15 @@ SECTION INFOR (02)
     text-shadow: 0 0 5px #ffffff66;
 }
 
-.icon_infos {
-    width: 28px;
-}
+.icon_infos {width: 28px;}
 
 .span_infos {
     font-size: 1.7em;
     font-weight: 600;
     background: linear-gradient(90deg, var(--cor01-bege), var(--cor02-rosa), var(--cor03-roxo), var(--cor04-azul), var(--cor05-ciano));
+    /* Diz onde o background se aplica\até onde vai */
     -webkit-background-clip: text;
+    /* Estabelece a cor do texto */
     -webkit-text-fill-color: transparent;
     text-shadow: 0 0 10px #2a2a2a66;
 }
@@ -595,6 +606,14 @@ SECTION SERVIÇOS (04)
     line-height: 1.5em;
 }
 
+.logo_footer {
+    padding: 5px 20px;
+    display: inline-block;
+    border: 1px solid var(--branco);
+    border-radius: var(--radius-40);
+    text-align: center;
+}
+
 .div_footer {
     display: flex;
     flex-flow: row wrap;
@@ -650,6 +669,10 @@ SECTION SERVIÇOS (04)
 .h3_footer {
     font-size: 2.3em;
     display: inline-block;
+}
+
+.title {
+    align-self: flex-start;
 }
 
 .h4 {
@@ -731,7 +754,7 @@ SECTION SERVIÇOS (04)
     }
 
     .h1 {
-        font-size: 2em;
+        font-size: 1.7em;
         max-width: 80%;
         text-align: center;
         margin-block: 20px;
@@ -773,8 +796,8 @@ SECTION SERVIÇOS (04)
     }
 
     /*-----------------------------------*\
-        #FOOTER
-    \*-----------------------------------*/
+    #FOOTER
+  \*-----------------------------------*/
 
 
     #footer {
@@ -782,7 +805,6 @@ SECTION SERVIÇOS (04)
         flex-flow: column nowrap;
         align-items: center;
         justify-content: center;
-        gap: 60px;
     }
 
     #footer>p {
@@ -797,7 +819,7 @@ SECTION SERVIÇOS (04)
         align-content: center;
         align-items: center;
         justify-content: space-between;
-        width: 75%;
+        width: 60%;
         gap: 20px;
     }
 
@@ -853,7 +875,6 @@ SECTION SERVIÇOS (04)
     min-height: 300px;
     }
 }
-
 
 /* TABLET */
 
